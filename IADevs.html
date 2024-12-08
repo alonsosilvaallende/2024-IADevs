@@ -544,6 +544,11 @@ Alonso Silva (Github: alonsosilvaallende)
 <h1>Vector-only retrieval</h1>
 
 </section>
+<section id="section-1" class="slide level3 nostretch">
+<h3></h3>
+<p><img data-src="./assets/lancedb-logo.svg" title="LanceDB logo" style="width:40.0%"></p>
+<p>Vector database: <a href="https://lancedb.com/">https://lancedb.com/</a></p>
+</section>
 <section id="vector-only-retrieval-1" class="slide level3">
 <h3>Vector-only retrieval</h3>
 <div id="ce5545b6-db09-4533-8097-224cf8745e64" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:01.635983Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:01.635001Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:01.648114Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:01.646909Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:01.635940Z&quot;}" data-execution_count="6">
@@ -852,6 +857,33 @@ trust I seek and I find
         
 </div>
 </div>
+</section>
+<section id="section-2" class="slide level3">
+<h3></h3>
+<div style="margin-top: 200px; font-size: 2em; color: black;">
+<p>Retrieval Augmented Generation (RAG)</p>
+</div>
+</section>
+<section id="section-3" class="slide level3">
+<h3></h3>
+<div class="column" style="width:25%;">
+<p><img data-src="./assets/llama-cpp-logo.png" title="llama.cpp logo" style="width:50.0%"></p>
+</div>
+<div class="column" style="width:25%;">
+<p><img data-src="./assets/llama-cpp-python-logo.svg" title="llama-cpp-python logo" style="width:30.0%"></p>
+</div>
+<div class="column" style="width:25%;">
+<p><img data-src="./assets/NousResearch2.jpg" title="NousResearch logo" style="width:50.0%"></p>
+</div>
+<div class="column" style="width:20%;">
+<p><img data-src="./assets/hf.png" title="HuggingFace logo" style="width:100.0%"></p>
+</div>
+<ul>
+<li><a href="https://github.com/ggerganov/llama.cpp">https://github.com/ggerganov/llama.cpp</a></li>
+<li><a href="https://llama-cpp-python.readthedocs.io/">https://llama-cpp-python.readthedocs.io/</a></li>
+<li><a href="https://nousresearch.com/">https://nousresearch.com/</a></li>
+<li><a href="https://huggingface.co/">https://huggingface.co/</a></li>
+</ul>
 </section>
 <section id="retrieval-augmented-generation-rag" class="slide level3">
 <h3>Retrieval Augmented Generation (RAG)</h3>
@@ -1402,7 +1434,7 @@ so he no longer has any senses?</code></pre>
 <section id="retrieval-augmented-generation-rag-3" class="slide level3">
 <h3>Retrieval Augmented Generation (RAG)</h3>
 <div id="d55e213f-4a17-480b-af86-232a05e52aca" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:11.940712Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:11.940209Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:11.946509Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:11.945377Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:11.940672Z&quot;}" data-execution_count="20">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href=""></a><span class="kw">def</span> generate_response(query):</span>
+<div class="sourceCode cell-code" id="cb19" data-code-line-numbers="1|2|3-7|8|1-8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href=""></a><span class="kw">def</span> generate_response(query):</span>
 <span id="cb19-2"><a href=""></a>    prompt <span class="op">=</span> build_prompt(query)</span>
 <span id="cb19-3"><a href=""></a>    response <span class="op">=</span> llm.create_chat_completion(</span>
 <span id="cb19-4"><a href=""></a>        messages<span class="op">=</span>[{<span class="st">"role"</span>: <span class="st">"user"</span>, <span class="st">"content"</span>: prompt}], </span>
@@ -1485,6 +1517,11 @@ so he no longer has any senses?</code></pre>
 <section id="graph-only-retrieval" class="title-slide slide level1 center">
 <h1>Graph-only retrieval</h1>
 
+</section>
+<section id="section-4" class="slide level3 nostretch">
+<h3></h3>
+<p><img data-src="./assets/kuzu-logo.png" title="Kùzu logo" style="width:40.0%"></p>
+<p>Graph database: <a href="https://kuzudb.com/">https://kuzudb.com/</a></p>
 </section>
 <section id="graph-only-retrieval-1" class="slide level3">
 <h3>Graph-only retrieval</h3>
@@ -1827,14 +1864,14 @@ The Black Album has the following songs: "Don't Tread On Me", "The Unforgiven", 
 <h1>What is Structured Generation?</h1>
 
 </section>
-<section id="section-1" class="title-slide slide level2 center">
+<section id="section-5" class="title-slide slide level2 center">
 <h2></h2>
 <div style="margin-top: 100px; font-size: 2em; color: black;">
 <p>The problem</p>
 </div>
 </section>
 
-<section id="section-2" class="title-slide slide level2 center">
+<section id="section-6" class="title-slide slide level2 center">
 <h2></h2>
 
 <img data-src="./assets/scikit-llm.jpg" title="scikit-llm Homepage" style="width:50.0%" class="r-stretch quarto-figure-center"><p class="caption">scikit-llm: <a href="https://skllm.beastbyte.ai/">https://skllm.beastbyte.ai/</a></p></section>
@@ -1842,11 +1879,11 @@ The Black Album has the following songs: "Don't Tread On Me", "The Unforgiven", 
 <h3>Show me the prompt!</h3>
 
 <img data-src="./assets/scikit-llm-prompt.jpg" title="scikit-llm prompt" style="width:25.0%" class="r-stretch quarto-figure-center"><p class="caption">scikit-llm prompts: <a href="https://github.com/iryna-kondr/scikit-llm/blob/main/skllm/prompts/templates.py">https://github.com/iryna-kondr/scikit-llm/blob/main/skllm/prompts/templates.py</a></p></section>
-<section id="section-3" class="slide level3">
+<section id="section-7" class="slide level3">
 <h3></h3>
 
 <img data-src="./assets/we-can-do-better.jpg" title="We can do better!" style="width:50.0%" class="r-stretch"></section>
-<section id="section-4" class="slide level3">
+<section id="section-8" class="slide level3">
 <h3></h3>
 <div style="margin-top: 200px; font-size: 2em; color: black;">
 <p>What is NOT Structured Generation?</p>
@@ -1921,17 +1958,17 @@ The Black Album has the following songs: "Don't Tread On Me", "The Unforgiven", 
 </div>
 </section>
 
-<section id="section-5" class="title-slide slide level2 center">
+<section id="section-9" class="title-slide slide level2 center">
 <h2></h2>
 
 <img data-src="./assets/we-can-do-better.jpg" title="We can do better!" style="width:50.0%" class="r-stretch"></section>
-<section id="section-6" class="slide level3">
+<section id="section-10" class="slide level3">
 <h3></h3>
 <div style="margin-top: 200px; font-size: 2em; color: black;">
 <p>What is Structured Generation?</p>
 </div>
 </section>
-<section id="section-7" class="slide level3 nostretch">
+<section id="section-11" class="slide level3 nostretch">
 <h3></h3>
 <p><img data-src="./assets/outlines-logo.webp" title="Outlines logo" style="width:40.0%"></p>
 <p><a href="https://dottxt-ai.github.io/outlines/">https://dottxt-ai.github.io/outlines/</a></p>
@@ -2056,7 +2093,7 @@ The Black Album has the following songs: "Don't Tread On Me", "The Unforgiven", 
 <h2>Structured Outputs + Structured Generation</h2>
 
 </section>
-<section id="section-8" class="slide level3">
+<section id="section-12" class="slide level3">
 <h3></h3>
 <div id="36d9920b-c46a-43ae-b7e6-eb5fa819df2e" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:43.739499Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:43.739267Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:44.112619Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:44.112144Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:43.739484Z&quot;}" data-execution_count="54">
 <div class="sourceCode cell-code" id="annotated-cell-41" data-code-line-numbers="1-18|12-13|14-16|1-18"><pre class="sourceCode numberSource python code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode python"><span id="annotated-cell-41-1"><a href="#annotated-cell-41-1"></a>user_input <span class="op">=</span> <span class="st">"You are great"</span></span>
@@ -2100,11 +2137,6 @@ The Black Album has the following songs: "Don't Tread On Me", "The Unforgiven", 
 <h1>Knowledge Graph Generation</h1>
 
 </section>
-<section id="section-9" class="slide level3 nostretch">
-<h3></h3>
-<p><img data-src="./assets/kuzu-logo.png" title="Kùzu logo" style="width:40.0%"></p>
-<p>Graph database: <a href="https://kuzudb.com/">https://kuzudb.com/</a></p>
-</section>
 <section id="consider-a-text" class="slide level3">
 <h3>Consider a text</h3>
 <div id="8b2cfc57-b730-4c50-b52d-c73404e2dcf2" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:44.113255Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:44.113102Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:44.116234Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:44.115847Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:44.113242Z&quot;}" data-execution_count="55">
@@ -2136,7 +2168,7 @@ This one, in chemistry, was for the discovery of polonium and radium. In her acc
 </div>
 </div>
 </section>
-<section id="section-10" class="slide level3">
+<section id="section-13" class="slide level3">
 <h3></h3>
 <div id="c05af2cc-dcd0-4c6a-95c9-4d1435389ab7" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:44.138727Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:44.138243Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:44.153042Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:44.152106Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:44.138689Z&quot;}" data-execution_count="57">
 <div class="sourceCode cell-code" id="cb62"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb62-1"><a href=""></a><span class="im">from</span> pydantic <span class="im">import</span> BaseModel, Field</span>
@@ -2158,7 +2190,7 @@ This one, in chemistry, was for the discovery of polonium and radium. In her acc
 <span id="cb62-17"><a href=""></a>    label: <span class="bu">str</span> <span class="op">=</span> Field(..., description<span class="op">=</span><span class="st">"Label of the edge"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="section-11" class="slide level3">
+<section id="section-14" class="slide level3">
 <h3></h3>
 <div id="f496e731-b887-482c-ae15-03a70b217844" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:44.166850Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:44.166365Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:44.188466Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:44.187289Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:44.166810Z&quot;}" data-execution_count="59">
 <div class="sourceCode cell-code" id="cb63"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb63-1"><a href=""></a><span class="im">from</span> typing <span class="im">import</span> List</span>
@@ -2174,7 +2206,7 @@ This one, in chemistry, was for the discovery of polonium and radium. In her acc
 <span id="cb63-11"><a href=""></a>tools <span class="op">=</span> [convert_to_openai_tool(KnowledgeGraph)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="section-12" class="slide level3">
+<section id="section-15" class="slide level3">
 <h3></h3>
 <div id="7441237a-43a3-4b6e-b5e2-d02e3d79b291" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:44.190292Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:44.189565Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:44.200950Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:44.199968Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:44.190254Z&quot;}" data-execution_count="60">
 <div class="sourceCode cell-code" id="cb64" data-code-line-numbers="6-9,14-15|1-18"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb64-1"><a href=""></a><span class="kw">def</span> build_messages(text: <span class="bu">str</span>):</span>
@@ -2197,7 +2229,7 @@ This one, in chemistry, was for the discovery of polonium and radium. In her acc
 <span id="cb64-18"><a href=""></a>    <span class="cf">return</span> messages</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="section-13" class="slide level3">
+<section id="section-16" class="slide level3">
 <h3></h3>
 <div id="f7f3f89e-3984-409d-8293-ba91210fb714" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:44.227709Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:44.227374Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:44.233933Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:44.233052Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:44.227676Z&quot;}" data-execution_count="62">
 <div class="sourceCode cell-code" id="annotated-cell-47" data-code-line-numbers="9-13|1-18"><pre class="sourceCode numberSource python code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode python"><span id="annotated-cell-47-1"><a href="#annotated-cell-47-1"></a><span class="kw">def</span> generate_assistant_message(messages):</span>
@@ -2232,7 +2264,7 @@ This one, in chemistry, was for the discovery of polonium and radium. In her acc
 </div>
 </div>
 </section>
-<section id="section-14" class="title-slide slide level2 center">
+<section id="section-17" class="title-slide slide level2 center">
 <h2></h2>
 <div id="b4dfcf8c-46d8-40f1-9e23-7ab31febf9cb" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:48.460061Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:48.459909Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:52.170982Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:52.170550Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:48.460048Z&quot;}" data-execution_count="64">
 <div class="sourceCode cell-code" id="cb65"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb65-1"><a href=""></a><span class="kw">def</span> generate_kg(text):</span>
@@ -2247,7 +2279,7 @@ This one, in chemistry, was for the discovery of polonium and radium. In her acc
 </div>
 </section>
 
-<section id="section-15" class="title-slide slide level2 center">
+<section id="section-18" class="title-slide slide level2 center">
 <h2></h2>
 <div id="e2a213e3-1264-4622-be22-356cfc93f6dd" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:55.899502Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:55.899345Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:27:11.026048Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:27:11.025538Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:55.899489Z&quot;}" data-execution_count="66">
 <div class="sourceCode cell-code" id="cb67"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb67-1"><a href=""></a><span class="im">import</span> json</span>
@@ -2278,7 +2310,7 @@ Counter({'DISCOVERED': 4, 'STUDIES': 3, 'AWARDED': 2, 'DESCRIBED_AS': 2, 'PARTIC
 </div>
 </div>
 </section>
-<section id="section-16" class="slide level3" data-auto-animate="true">
+<section id="section-19" class="slide level3" data-auto-animate="true">
 <h3 data-id="quarto-animate-title"></h3>
 <div id="3b02acea-9e86-4ea9-8407-a178ad14cab6" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:27:11.032621Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:27:11.031993Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:27:11.055310Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:27:11.054540Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:27:11.032581Z&quot;}" data-execution_count="68">
 <div class="sourceCode cell-code" id="cb70" data-code-line-numbers="8,14"><pre class="sourceCode numberSource python number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode python hljs"><span id="cb70-1" class="hljs-ln-code"><a href=""></a><span class="im">from</span> typing <span class="im">import</span> Literal, Optional</span>
@@ -2299,7 +2331,7 @@ Counter({'DISCOVERED': 4, 'STUDIES': 3, 'AWARDED': 2, 'DESCRIBED_AS': 2, 'PARTIC
 <span id="cb70-16" class="hljs-ln-code"><a href=""></a>    label: <span class="bu">str</span> <span class="op">=</span> Field(..., description<span class="op">=</span><span class="st">"Label of the edge"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="section-17" class="slide level3" data-auto-animate="true">
+<section id="section-20" class="slide level3" data-auto-animate="true">
 <h3 data-id="quarto-animate-title"></h3>
 <div id="22790ddc-7a28-48a5-81ef-e20e5dde1fdb" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:27:11.057204Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:27:11.056410Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:27:11.078035Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:27:11.076873Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:27:11.057164Z&quot;}" data-execution_count="69">
 <div class="sourceCode cell-code" id="cb71" data-code-line-numbers="7-9,15-17"><pre class="sourceCode numberSource python number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode python hljs"><span id="cb71-1" class="hljs-ln-code"><a href=""></a><span class="im">from</span> typing <span class="im">import</span> Literal, Optional</span>
@@ -2322,7 +2354,7 @@ Counter({'DISCOVERED': 4, 'STUDIES': 3, 'AWARDED': 2, 'DESCRIBED_AS': 2, 'PARTIC
 <span id="cb71-18" class="hljs-ln-code"><a href=""></a>    label: <span class="bu">str</span> <span class="op">=</span> Field(..., description<span class="op">=</span><span class="st">"Label of the edge"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="section-18" class="slide level3">
+<section id="section-21" class="slide level3">
 <h3></h3>
 <div class="panel-tabset">
 <ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Chunk 1</a></li><li><a href="#tabset-1-2">Chunk 2</a></li><li><a href="#tabset-1-3">Chunk 3</a></li><li><a href="#tabset-1-4">Chunk 4</a></li></ul>
@@ -2447,7 +2479,7 @@ Counter({'DISCOVERED': 4, 'STUDIES': 3, 'AWARDED': 2, 'DESCRIBED_AS': 2, 'PARTIC
 </div>
 </div>
 </section>
-<section id="section-19" class="slide level3">
+<section id="section-22" class="slide level3">
 <h3></h3>
 <div id="afe3c6c0-ba3c-4410-a0a0-75a58626d744" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:28:13.192862Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:28:13.192340Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:28:13.214712Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:28:13.213728Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:28:13.192824Z&quot;}" data-execution_count="77">
 <div class="sourceCode cell-code" id="cb80"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb80-1"><a href=""></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -2556,7 +2588,7 @@ Counter({'DISCOVERED': 4, 'STUDIES': 3, 'AWARDED': 2, 'DESCRIBED_AS': 2, 'PARTIC
 <h1>KG-based Agents</h1>
 
 </section>
-<section id="section-20" class="slide level3 nostretch">
+<section id="section-23" class="slide level3 nostretch">
 <h3></h3>
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -2662,7 +2694,8 @@ Relationships: ['(:Person)-[:Awarded]-&gt;(:Award)', '(:Person)-[:Discovered]-&g
 <span id="cb93-11"><a href=""></a>    col_name <span class="op">=</span> df.columns[<span class="dv">0</span>]</span>
 <span id="cb93-12"><a href=""></a>    _values <span class="op">=</span> df[col_name].to_list()</span>
 <span id="cb93-13"><a href=""></a>    <span class="cf">return</span> <span class="ss">f"[</span><span class="sc">{</span>col_name<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>_values<span class="sc">}</span><span class="ss">]"</span></span>
-<span id="cb93-14"><a href=""></a>query_generator_tool(<span class="st">"What discovery is Marie Curie famous for?"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb93-14"><a href=""></a>    </span>
+<span id="cb93-15"><a href=""></a>query_generator_tool(<span class="st">"What discovery is Marie Curie famous for?"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code> Cypher query: MATCH (p:Person {name: 'Marie Curie'})-[:Discovered]-&gt;(d:Discovery) RETURN d.name </code></pre>
 </div>
