@@ -14,8 +14,9 @@ Se debe instalar también `llama-cpp-python` y la instalación dependerá de la 
 ```
 pip install llama-cpp-python
 ```
+Sino, seguir estas [instrucciones](https://github.com/abetlen/llama-cpp-python?tab=readme-ov-file#installation).
 
-Esta presentación se llevo a cabo el 9 de diciembre de 2024.
+Esta presentación se llevó a cabo el 9 de diciembre de 2024.
 
 El **abstract** de la presentación es:
 
