@@ -87,7 +87,8 @@ df.head()
 #| echo: true
 queries = [
     "Which song is about a boy who is having nightmares?",
-    "Which song is about a guy who is so badly wounded in war so he no longer has any senses?",
+    """Which song is about a guy who is so badly wounded in war 
+    so he no longer has any senses?""",
     "How many songs does the reload album have?",
     "Which songs does the black album have?"
 ]
@@ -220,20 +221,41 @@ IFrame("https://alonsosilva-song-finder.hf.space", width=850, height=450)
 ## Retrieval Augmented Generation (RAG)
 
 ```{python}
-#| echo: true
-import llama_cpp
+# #| echo: true
+# import llama_cpp
 
-llm = llama_cpp.Llama(
+# llm = llama_cpp.Llama(
+#     "/big_storage/llms/models/Hermes-3-Llama-3.1-8B.Q6_K.gguf",
+#     tokenizer=llama_cpp.llama_tokenizer.LlamaHFTokenizer.from_pretrained(
+#         "NousResearch/Hermes-3-Llama-3.1-8B"
+#     ),
+#     n_gpu_layers=-1,
+#     flash_attn=True,
+#     n_ctx=8192,
+#     verbose=False,
+# )
+```
+
+```{python}
+#| echo: true
+import llama_cpp  
+
+model_id = "NousResearch/Hermes-3-Llama-3.1-8B" # <1>
+llm = llama_cpp.Llama(  # <2>
     "/big_storage/llms/models/Hermes-3-Llama-3.1-8B.Q6_K.gguf",
     tokenizer=llama_cpp.llama_tokenizer.LlamaHFTokenizer.from_pretrained(
-        "NousResearch/Hermes-3-Llama-3.1-8B"
+        model_id
     ),
     n_gpu_layers=-1,
     flash_attn=True,
     n_ctx=8192,
     verbose=False,
+    chat_format="chatml-function-calling"
 )
 ```
+
+1. [Hermes 3](https://nousresearch.com/hermes3/) by [NousResearch](https://nousresearch.com/)
+2. [llama-cpp-python](https://llama-cpp-python.readthedocs.io/) python bindings for [llama.cpp](https://github.com/ggerganov/llama.cpp)
 
 ## Retrieval Augmented Generation (RAG)
 
@@ -255,7 +277,7 @@ print(get_relevant_texts(query))
 
 ```{python}
 #| echo: true
-#| code-line-numbers: 3-4|5-6|1-9
+#| code-line-numbers: 1|3-4|5-6|1-9
 def build_prompt(query):
     return (
         "Answer the question based only on the following context:\n\n"
@@ -676,29 +698,6 @@ What is NOT Structured Generation?
 :::
 
 ::::
-
-### Structured Outputs in Code
-
-```{python}
-#| echo: true
-import llama_cpp  
-
-model_id = "NousResearch/Hermes-3-Llama-3.1-8B" # <1>
-llm = llama_cpp.Llama(  # <2>
-    "/big_storage/llms/models/Hermes-3-Llama-3.1-8B.Q6_K.gguf",
-    tokenizer=llama_cpp.llama_tokenizer.LlamaHFTokenizer.from_pretrained(
-        model_id
-    ),
-    n_gpu_layers=-1,
-    flash_attn=True,
-    n_ctx=8192,
-    verbose=False,
-    chat_format="chatml-function-calling"
-)
-```
-
-1. [Hermes 3](https://nousresearch.com/hermes3/) by [NousResearch](https://nousresearch.com/)
-2. [llama-cpp-python](https://llama-cpp-python.readthedocs.io/) python bindings for [llama.cpp](https://github.com/ggerganov/llama.cpp)
 
 ### Structured Outputs in Code
 
