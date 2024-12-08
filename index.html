@@ -440,8 +440,8 @@ Alonso Silva (Github: alonsosilvaallende)
 <section id="section" class="slide level3">
 <h3></h3>
 <ul>
-<li>Slides: <a href="https://alonsosilvaallende.github.io/2024-PyData-Global/">alonsosilvaallende.github.io/2024-PyData-Global/</a></li>
-<li>This presentation: <a href="https://github.com/alonsosilvaallende/2024-PyData-Global/blob/main/PyData-Global.ipynb">https://github.com/alonsosilvaallende/2024-PyData-Global/blob/main/PyData-Global.ipynb</a></li>
+<li>Slides: <a href="https://alonsosilvaallende.github.io/2024-IADevs/">https://alonsosilvaallende.github.io/2024-IADevs/</a></li>
+<li>This presentation: <a href="https://github.com/alonsosilvaallende/2024-IADevs/blob/main/IADevs.ipynb">https://github.com/alonsosilvaallende/2024-IADevs/blob/main/IADevs.ipynb</a></li>
 </ul>
 </section>
 <section>
@@ -451,7 +451,7 @@ Alonso Silva (Github: alonsosilvaallende)
 </section>
 <section id="data" class="slide level3">
 <h3>Data</h3>
-<div id="0c683dc0-9642-41f3-9309-0f653db224f2" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:42:55.494063Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:42:55.493155Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:42:59.013222Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:42:59.012046Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:42:55.494013Z&quot;}" data-execution_count="2">
+<div id="0c683dc0-9642-41f3-9309-0f653db224f2" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:24:58.530291Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:24:58.529737Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:01.592457Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:01.591268Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:24:58.530246Z&quot;}" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href=""></a><span class="im">import</span> polars <span class="im">as</span> pl</span>
 <span id="cb1-2"><a href=""></a><span class="im">import</span> string</span>
 <span id="cb1-3"><a href=""></a></span>
@@ -529,13 +529,14 @@ Alonso Silva (Github: alonsosilvaallende)
 </section>
 <section id="potential-kind-of-queries" class="slide level3">
 <h3>Potential kind of queries</h3>
-<div id="64162c3c-84f3-42cf-b576-0eee0490df78" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:42:59.021322Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:42:59.020725Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:42:59.044879Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:42:59.043575Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:42:59.021268Z&quot;}" data-execution_count="4">
+<div id="64162c3c-84f3-42cf-b576-0eee0490df78" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:01.600154Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:01.599582Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:01.619027Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:01.617756Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:01.600122Z&quot;}" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href=""></a>queries <span class="op">=</span> [</span>
 <span id="cb2-2"><a href=""></a>    <span class="st">"Which song is about a boy who is having nightmares?"</span>,</span>
-<span id="cb2-3"><a href=""></a>    <span class="st">"Which song is about a guy who is so badly wounded in war so he no longer has any senses?"</span>,</span>
-<span id="cb2-4"><a href=""></a>    <span class="st">"How many songs does the reload album have?"</span>,</span>
-<span id="cb2-5"><a href=""></a>    <span class="st">"Which songs does the black album have?"</span></span>
-<span id="cb2-6"><a href=""></a>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-3"><a href=""></a>    <span class="st">"""Which song is about a guy who is so badly wounded in war </span></span>
+<span id="cb2-4"><a href=""></a><span class="st">    so he no longer has any senses?"""</span>,</span>
+<span id="cb2-5"><a href=""></a>    <span class="st">"How many songs does the reload album have?"</span>,</span>
+<span id="cb2-6"><a href=""></a>    <span class="st">"Which songs does the black album have?"</span></span>
+<span id="cb2-7"><a href=""></a>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section></section>
 <section>
@@ -543,9 +544,9 @@ Alonso Silva (Github: alonsosilvaallende)
 <h1>Vector-only retrieval</h1>
 
 </section>
-<section id="vector-only-retrieval-1" class="title-slide slide level2 center">
-<h2>Vector-only retrieval</h2>
-<div id="ce5545b6-db09-4533-8097-224cf8745e64" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:42:59.062261Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:42:59.061315Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:42:59.074725Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:42:59.073378Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:42:59.062216Z&quot;}" data-execution_count="6">
+<section id="vector-only-retrieval-1" class="slide level3">
+<h3>Vector-only retrieval</h3>
+<div id="ce5545b6-db09-4533-8097-224cf8745e64" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:01.635983Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:01.635001Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:01.648114Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:01.646909Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:01.635940Z&quot;}" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href=""></a>df <span class="op">=</span> df.with_columns(</span>
 <span id="cb3-2"><a href=""></a>    text<span class="op">=</span>pl.lit(<span class="st">"# "</span>)</span>
 <span id="cb3-3"><a href=""></a>    <span class="op">+</span> pl.col(<span class="st">"Album"</span>)</span>
@@ -624,10 +625,9 @@ Alonso Silva (Github: alonsosilvaallende)
 </div>
 </div>
 </section>
-
-<section id="vector-only-retrieval-2" class="title-slide slide level2 center">
-<h2>Vector-only retrieval</h2>
-<div id="d23c41c4-ebe2-4af9-a7a5-0b1a088b4d0f" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:42:59.077021Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:42:59.076043Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:42:59.083694Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:42:59.082383Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:42:59.076965Z&quot;}" data-execution_count="7">
+<section id="vector-only-retrieval-2" class="slide level3">
+<h3>Vector-only retrieval</h3>
+<div id="d23c41c4-ebe2-4af9-a7a5-0b1a088b4d0f" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:01.649884Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:01.649223Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:01.662037Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:01.660741Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:01.649844Z&quot;}" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href=""></a><span class="bu">print</span>(df.select(<span class="st">"text"</span>)[<span class="dv">1</span>].item()[:<span class="dv">300</span>])</span>
 <span id="cb4-2"><a href=""></a><span class="bu">print</span>(<span class="st">"..."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -647,21 +647,20 @@ trust I seek and I find
 </div>
 </div>
 </section>
-
-<section id="vector-only-retrieval-3" class="title-slide slide level2 center">
-<h2>Vector-only retrieval</h2>
-<div id="77714984-e16b-4498-860f-7fee655a9df4" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:42:59.085438Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:42:59.085025Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:42:59.557067Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:42:59.556366Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:42:59.085399Z&quot;}" data-execution_count="8">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href=""></a><span class="im">import</span> shutil</span>
-<span id="cb6-2"><a href=""></a><span class="im">import</span> lancedb</span>
-<span id="cb6-3"><a href=""></a></span>
-<span id="cb6-4"><a href=""></a>shutil.rmtree(<span class="st">"lancedb_explorer"</span>, ignore_errors<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb6-5"><a href=""></a>db <span class="op">=</span> lancedb.<span class="ex">connect</span>(<span class="st">"lancedb_explorer"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="vector-only-retrieval-3" class="slide level3">
+<h3>Vector-only retrieval</h3>
+<div id="77714984-e16b-4498-860f-7fee655a9df4" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:54:52.667202Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:54:52.666088Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:54:52.676565Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:54:52.675071Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:54:52.667155Z&quot;}" data-execution_count="103">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href=""></a><span class="co"># Initialize vector database</span></span>
+<span id="cb6-2"><a href=""></a><span class="im">import</span> shutil</span>
+<span id="cb6-3"><a href=""></a><span class="im">import</span> lancedb</span>
+<span id="cb6-4"><a href=""></a></span>
+<span id="cb6-5"><a href=""></a>shutil.rmtree(<span class="st">"lancedb_explorer"</span>, ignore_errors<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb6-6"><a href=""></a>db <span class="op">=</span> lancedb.<span class="ex">connect</span>(<span class="st">"lancedb_explorer"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-
-<section id="vector-only-retrieval-4" class="title-slide slide level2 center">
-<h2>Vector-only retrieval</h2>
-<div id="c20058dd-85e6-429c-aeab-f3e20a6fe4b5" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:42:59.557821Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:42:59.557632Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:42:59.561174Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:42:59.560544Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:42:59.557808Z&quot;}" data-execution_count="9">
+<section id="vector-only-retrieval-4" class="slide level3">
+<h3>Vector-only retrieval</h3>
+<div id="c20058dd-85e6-429c-aeab-f3e20a6fe4b5" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:54:53.738041Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:54:53.737427Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:54:53.744751Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:54:53.743301Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:54:53.737994Z&quot;}" data-execution_count="104">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href=""></a><span class="im">from</span> lancedb.embeddings <span class="im">import</span> get_registry</span>
 <span id="cb7-2"><a href=""></a></span>
 <span id="cb7-3"><a href=""></a>embeddings <span class="op">=</span> (</span>
@@ -671,10 +670,9 @@ trust I seek and I find
 <span id="cb7-7"><a href=""></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-
-<section id="vector-only-retrieval-5" class="title-slide slide level2 center">
-<h2>Vector-only retrieval</h2>
-<div id="edd4be7f-59d0-43c1-a0eb-d72f8b99768b" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:42:59.561665Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:42:59.561518Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:10.438165Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:10.437256Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:42:59.561650Z&quot;}" data-execution_count="10">
+<section id="vector-only-retrieval-5" class="slide level3">
+<h3>Vector-only retrieval</h3>
+<div id="edd4be7f-59d0-43c1-a0eb-d72f8b99768b" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:54:54.926474Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:54:54.926024Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:54:54.956611Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:54:54.955319Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:54:54.926432Z&quot;}" data-execution_count="105">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href=""></a><span class="im">from</span> lancedb.pydantic <span class="im">import</span> LanceModel, Vector</span>
 <span id="cb8-2"><a href=""></a></span>
 <span id="cb8-3"><a href=""></a><span class="kw">class</span> Songs(LanceModel):</span>
@@ -686,21 +684,129 @@ trust I seek and I find
 <span id="cb8-9"><a href=""></a>    vector: Vector(embeddings.ndims()) <span class="op">=</span> embeddings.VectorField()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-
-<section id="vector-only-retrieval-6" class="title-slide slide level2 center">
-<h2>Vector-only retrieval</h2>
-<div id="16ddf216-1f98-4a87-85c5-94af61ecd17b" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:10.440107Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:10.439327Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:10.777857Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:10.776878Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:10.440062Z&quot;}" data-execution_count="11">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href=""></a>table <span class="op">=</span> db.create_table(<span class="st">"Songs"</span>, schema<span class="op">=</span>Songs)</span>
-<span id="cb9-2"><a href=""></a>table.add(data<span class="op">=</span>df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="vector-only-retrieval-6" class="slide level3">
+<h3>Vector-only retrieval</h3>
+<div id="16ddf216-1f98-4a87-85c5-94af61ecd17b" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:54:56.182532Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:54:56.182073Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:54:56.488255Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:54:56.486905Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:54:56.182488Z&quot;}" data-execution_count="106">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href=""></a><span class="co"># Add dataframe to the vector database</span></span>
+<span id="cb9-2"><a href=""></a>table <span class="op">=</span> db.create_table(<span class="st">"Songs"</span>, schema<span class="op">=</span>Songs)</span>
+<span id="cb9-3"><a href=""></a>table.add(data<span class="op">=</span>df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-
-<section id="vector-only-retrieval-7" class="title-slide slide level2 center">
-<h2>Vector-only retrieval</h2>
-<div id="3d8276d5-5c46-4dc9-b151-064ab2947169" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:10.783097Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:10.782928Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:10.833813Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:10.833060Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:10.783080Z&quot;}" data-execution_count="13">
+<section id="vector-only-retrieval-7" class="slide level3">
+<h3>Vector-only retrieval</h3>
+<div id="52db9637-79fc-4a79-9eac-5dd2d7b3f801" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:57:18.385334Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:57:18.384815Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:57:27.316743Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:57:27.315862Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:57:18.385289Z&quot;}" data-execution_count="109">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href=""></a>query <span class="op">=</span> <span class="st">"Which song is about a boy who is having nightmares?"</span></span>
 <span id="cb10-2"><a href=""></a>results <span class="op">=</span> table.search(query).limit(<span class="dv">10</span>).to_polars()</span>
-<span id="cb10-3"><a href=""></a>results[<span class="st">"Song"</span>].to_list()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb10-3"><a href=""></a>results.select([<span class="st">"Song"</span>,<span class="st">"Album"</span>, <span class="st">"Lyrics"</span>, <span class="st">"_distance"</span>, <span class="st">"vector"</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="109">
+<div><style>
+.dataframe > thead > tr,
+.dataframe > tbody > tr {
+  text-align: right;
+  white-space: pre-wrap;
+}
+</style>
+<small>shape: (10, 5)</small>
+<table class="dataframe" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Song</th>
+<th data-quarto-table-cell-role="th">Album</th>
+<th data-quarto-table-cell-role="th">Lyrics</th>
+<th data-quarto-table-cell-role="th">_distance</th>
+<th data-quarto-table-cell-role="th">vector</th>
+</tr>
+<tr class="odd">
+<th>str</th>
+<th>str</th>
+<th>str</th>
+<th>f32</th>
+<th>array[f32, 384]</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>"Enter Sandman"</td>
+<td>"The Black Album"</td>
+<td>"Say your prayers little one do…</td>
+<td>0.228461</td>
+<td>[-0.019242, 0.004355, … 0.019346]</td>
+</tr>
+<tr class="even">
+<td>"The Thing That Should Not Be"</td>
+<td>"S&amp;m"</td>
+<td>"Messenger of fear in sight Dar…</td>
+<td>0.229785</td>
+<td>[-0.0343, -0.004135, … 0.017745]</td>
+</tr>
+<tr class="odd">
+<td>"Hero Of The Day"</td>
+<td>"S&amp;m"</td>
+<td>"Mama they try and break me The…</td>
+<td>0.233728</td>
+<td>[-0.06035, 0.001112, … 0.052594]</td>
+</tr>
+<tr class="even">
+<td>"The Thing That Should Not Be"</td>
+<td>"Master Of Puppets"</td>
+<td>"Messenger of fear in sight Dar…</td>
+<td>0.241206</td>
+<td>[-0.039418, 0.001882, … 0.016381]</td>
+</tr>
+<tr class="odd">
+<td>"Hero Of The Day"</td>
+<td>"Load"</td>
+<td>"Mama they try and break me The…</td>
+<td>0.245303</td>
+<td>[-0.07442, -0.000922, … 0.047706]</td>
+</tr>
+<tr class="even">
+<td>"Invisible Kid"</td>
+<td>"St. Anger"</td>
+<td>"Invisible Kid Never see what h…</td>
+<td>0.2473</td>
+<td>[-0.033447, -0.034929, … 0.047731]</td>
+</tr>
+<tr class="odd">
+<td>"Enter Sandman"</td>
+<td>"S&amp;m"</td>
+<td>"Let loose man! Say your prayer…</td>
+<td>0.250452</td>
+<td>[-0.024093, 0.032401, … 0.021124]</td>
+</tr>
+<tr class="even">
+<td>"Sad But True"</td>
+<td>"S&amp;m"</td>
+<td>"Hey, hey, hey, hey, hey, hey, …</td>
+<td>0.250919</td>
+<td>[-0.046668, -0.00912, … 0.024796]</td>
+</tr>
+<tr class="odd">
+<td>"My Friend Of Misery"</td>
+<td>"The Black Album"</td>
+<td>"You just stood there screaming…</td>
+<td>0.253463</td>
+<td>[-0.0754, -0.001582, … 0.026701]</td>
+</tr>
+<tr class="even">
+<td>"One"</td>
+<td>"S&amp;m"</td>
+<td>"I can't remember anything Can'…</td>
+<td>0.253472</td>
+<td>[-0.055845, -0.000173, … 0.016305]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="vector-only-retrieval-8" class="slide level3">
+<h3>Vector-only retrieval</h3>
+<div id="3d8276d5-5c46-4dc9-b151-064ab2947169" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:09.611848Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:09.611044Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:09.659045Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:09.658204Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:09.611808Z&quot;}" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href=""></a>query <span class="op">=</span> <span class="st">"Which song is about a boy who is having nightmares?"</span></span>
+<span id="cb11-2"><a href=""></a>results <span class="op">=</span> table.search(query).limit(<span class="dv">10</span>).to_polars()</span>
+<span id="cb11-3"><a href=""></a>results[<span class="st">"Song"</span>].to_list()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="13">
 <pre><code>['Enter Sandman',
  'The Thing That Should Not Be',
@@ -715,14 +821,13 @@ trust I seek and I find
 </div>
 </div>
 </section>
-
-<section id="vector-only-retrieval-8" class="title-slide slide level2 center">
-<h2>Vector-only retrieval</h2>
-<div id="44acbc4b-6ca3-4428-934a-8340ad1fffef" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:10.834917Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:10.834603Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:10.857399Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:10.856410Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:10.834891Z&quot;}" data-execution_count="14">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href=""></a>query <span class="op">=</span> <span class="st">"""Which song is about a guy who is so badly wounded in war</span></span>
-<span id="cb12-2"><a href=""></a><span class="st">so he no longer has any senses?"""</span></span>
-<span id="cb12-3"><a href=""></a>results <span class="op">=</span> table.search(query).limit(<span class="dv">10</span>).to_polars()</span>
-<span id="cb12-4"><a href=""></a>results[<span class="st">"Song"</span>].to_list()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="vector-only-retrieval-9" class="slide level3">
+<h3>Vector-only retrieval</h3>
+<div id="44acbc4b-6ca3-4428-934a-8340ad1fffef" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:09.660151Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:09.659801Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:09.686654Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:09.685547Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:09.660127Z&quot;}" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href=""></a>query <span class="op">=</span> <span class="st">"""Which song is about a guy who is so badly wounded in war</span></span>
+<span id="cb13-2"><a href=""></a><span class="st">so he no longer has any senses?"""</span></span>
+<span id="cb13-3"><a href=""></a>results <span class="op">=</span> table.search(query).limit(<span class="dv">10</span>).to_polars()</span>
+<span id="cb13-4"><a href=""></a>results[<span class="st">"Song"</span>].to_list()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="14">
 <pre><code>['Phantom Lord',
  'One',
@@ -737,11 +842,10 @@ trust I seek and I find
 </div>
 </div>
 </section>
-
-<section id="vector-only-retrieval-9" class="title-slide slide level2 center">
+<section id="vector-only-retrieval-10" class="title-slide slide level2 center">
 <h2>Vector-only retrieval</h2>
 <p><a href="https://alonsosilva-song-finder.hf.space">https://alonsosilva-song-finder.hf.space</a></p>
-<div id="96be5f5c-f3a0-491f-9189-cba6e4824091" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:10.858707Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:10.858306Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:10.865214Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:10.864279Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:10.858678Z&quot;}" data-execution_count="15">
+<div id="96be5f5c-f3a0-491f-9189-cba6e4824091" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:09.688167Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:09.687682Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:09.694404Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:09.693570Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:09.688129Z&quot;}" data-execution_count="15">
 <div class="cell-output cell-output-display" data-execution_count="15">
 
         <iframe width="850" height="450" src="https://alonsosilva-song-finder.hf.space" frameborder="0" allowfullscreen=""></iframe>
@@ -749,28 +853,40 @@ trust I seek and I find
 </div>
 </div>
 </section>
-
-<section id="retrieval-augmented-generation-rag" class="title-slide slide level2 center">
-<h2>Retrieval Augmented Generation (RAG)</h2>
-<div id="396623b9-7597-44dc-97f8-cb695d3ef6ba" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:10.866746Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:10.866344Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:13.023820Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:13.022902Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:10.866704Z&quot;}" data-execution_count="16">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href=""></a><span class="im">import</span> llama_cpp</span>
-<span id="cb14-2"><a href=""></a></span>
-<span id="cb14-3"><a href=""></a>llm <span class="op">=</span> llama_cpp.Llama(</span>
-<span id="cb14-4"><a href=""></a>    <span class="st">"/big_storage/llms/models/Hermes-3-Llama-3.1-8B.Q6_K.gguf"</span>,</span>
-<span id="cb14-5"><a href=""></a>    tokenizer<span class="op">=</span>llama_cpp.llama_tokenizer.LlamaHFTokenizer.from_pretrained(</span>
-<span id="cb14-6"><a href=""></a>        <span class="st">"NousResearch/Hermes-3-Llama-3.1-8B"</span></span>
-<span id="cb14-7"><a href=""></a>    ),</span>
-<span id="cb14-8"><a href=""></a>    n_gpu_layers<span class="op">=-</span><span class="dv">1</span>,</span>
-<span id="cb14-9"><a href=""></a>    flash_attn<span class="op">=</span><span class="va">True</span>,</span>
-<span id="cb14-10"><a href=""></a>    n_ctx<span class="op">=</span><span class="dv">8192</span>,</span>
-<span id="cb14-11"><a href=""></a>    verbose<span class="op">=</span><span class="va">False</span>,</span>
-<span id="cb14-12"><a href=""></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="retrieval-augmented-generation-rag" class="slide level3">
+<h3>Retrieval Augmented Generation (RAG)</h3>
+<div id="b38cdd1b-27c9-42e6-a881-1a2d39deda78" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:09.706979Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:09.706469Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:11.900291Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:11.899521Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:09.706941Z&quot;}" data-execution_count="17">
+<div class="sourceCode cell-code" id="annotated-cell-12"><pre class="sourceCode numberSource python code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode python"><span id="annotated-cell-12-1"><a href="#annotated-cell-12-1"></a><span class="im">import</span> llama_cpp  </span>
+<span id="annotated-cell-12-2"><a href="#annotated-cell-12-2"></a></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-12" data-target-annotation="1" onclick="event.preventDefault();" href="">1</a><span id="annotated-cell-12-3" class="code-annotation-target"><a href="#annotated-cell-12-3"></a>model_id <span class="op">=</span> <span class="st">"NousResearch/Hermes-3-Llama-3.1-8B"</span></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-12" data-target-annotation="2" onclick="event.preventDefault();" href="">2</a><span id="annotated-cell-12-4" class="code-annotation-target"><a href="#annotated-cell-12-4"></a>llm <span class="op">=</span> llama_cpp.Llama(</span>
+<span id="annotated-cell-12-5"><a href="#annotated-cell-12-5"></a>    <span class="st">"/big_storage/llms/models/Hermes-3-Llama-3.1-8B.Q6_K.gguf"</span>,</span>
+<span id="annotated-cell-12-6"><a href="#annotated-cell-12-6"></a>    tokenizer<span class="op">=</span>llama_cpp.llama_tokenizer.LlamaHFTokenizer.from_pretrained(</span>
+<span id="annotated-cell-12-7"><a href="#annotated-cell-12-7"></a>        model_id</span>
+<span id="annotated-cell-12-8"><a href="#annotated-cell-12-8"></a>    ),</span>
+<span id="annotated-cell-12-9"><a href="#annotated-cell-12-9"></a>    n_gpu_layers<span class="op">=-</span><span class="dv">1</span>,</span>
+<span id="annotated-cell-12-10"><a href="#annotated-cell-12-10"></a>    flash_attn<span class="op">=</span><span class="va">True</span>,</span>
+<span id="annotated-cell-12-11"><a href="#annotated-cell-12-11"></a>    n_ctx<span class="op">=</span><span class="dv">8192</span>,</span>
+<span id="annotated-cell-12-12"><a href="#annotated-cell-12-12"></a>    verbose<span class="op">=</span><span class="va">False</span>,</span>
+<span id="annotated-cell-12-13"><a href="#annotated-cell-12-13"></a>    chat_format<span class="op">=</span><span class="st">"chatml-function-calling"</span></span>
+<span id="annotated-cell-12-14"><a href="#annotated-cell-12-14"></a>)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-12" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-12" data-code-lines="3" data-code-annotation="1"><a href="https://nousresearch.com/hermes3/">Hermes 3</a> by <a href="https://nousresearch.com/">NousResearch</a></span>
+</dd>
+<dt data-target-cell="annotated-cell-12" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-12" data-code-lines="4" data-code-annotation="2"><a href="https://llama-cpp-python.readthedocs.io/">llama-cpp-python</a> python bindings for <a href="https://github.com/ggerganov/llama.cpp">llama.cpp</a></span>
+</dd>
+</dl>
+</div>
 </div>
 </section>
-
-<section id="retrieval-augmented-generation-rag-1" class="title-slide slide level2 center">
-<h2>Retrieval Augmented Generation (RAG)</h2>
-<div id="1baa8b46-0277-4807-8bb2-815941830a3a" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:13.024656Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:13.024499Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:13.039997Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:13.039338Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:13.024642Z&quot;}" data-scrolled="true" data-execution_count="17">
+<section id="retrieval-augmented-generation-rag-1" class="slide level3">
+<h3>Retrieval Augmented Generation (RAG)</h3>
+<div id="1baa8b46-0277-4807-8bb2-815941830a3a" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:11.901419Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:11.901039Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:11.919640Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:11.918776Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:11.901393Z&quot;}" data-scrolled="true" data-execution_count="18">
 <div class="sourceCode cell-code" id="cb15" data-code-line-numbers="1|3-5|7|1-9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href=""></a><span class="kw">def</span> get_relevant_texts(query):</span>
 <span id="cb15-2"><a href=""></a>    results <span class="op">=</span> (</span>
 <span id="cb15-3"><a href=""></a>        table.search(query)</span>
@@ -1023,11 +1139,10 @@ my friend of misery
 </div>
 </div>
 </section>
-
-<section id="retrieval-augmented-generation-rag-2" class="title-slide slide level2 center">
-<h2>Retrieval Augmented Generation (RAG)</h2>
-<div id="f4d2f277-f6d9-42df-8bcf-ebad8e157149" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:13.040506Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:13.040359Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:13.061523Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:13.060804Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:13.040491Z&quot;}" data-scrolled="true" data-execution_count="18">
-<div class="sourceCode cell-code" id="cb17" data-code-line-numbers="3-4|5-6|1-9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href=""></a><span class="kw">def</span> build_prompt(query):</span>
+<section id="retrieval-augmented-generation-rag-2" class="slide level3">
+<h3>Retrieval Augmented Generation (RAG)</h3>
+<div id="f4d2f277-f6d9-42df-8bcf-ebad8e157149" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:11.920717Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:11.920471Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:11.939110Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:11.938040Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:11.920700Z&quot;}" data-scrolled="true" data-execution_count="19">
+<div class="sourceCode cell-code" id="cb17" data-code-line-numbers="1|3-4|5-6|1-9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href=""></a><span class="kw">def</span> build_prompt(query):</span>
 <span id="cb17-2"><a href=""></a>    <span class="cf">return</span> (</span>
 <span id="cb17-3"><a href=""></a>        <span class="st">"Answer the question based only on the following context:</span><span class="ch">\n\n</span><span class="st">"</span></span>
 <span id="cb17-4"><a href=""></a>        <span class="op">+</span> get_relevant_texts(query)</span>
@@ -1284,10 +1399,9 @@ so he no longer has any senses?</code></pre>
 </div>
 </div>
 </section>
-
-<section id="retrieval-augmented-generation-rag-3" class="title-slide slide level2 center">
-<h2>Retrieval Augmented Generation (RAG)</h2>
-<div id="d55e213f-4a17-480b-af86-232a05e52aca" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:13.062517Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:13.062210Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:13.066368Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:13.065697Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:13.062497Z&quot;}" data-execution_count="19">
+<section id="retrieval-augmented-generation-rag-3" class="slide level3">
+<h3>Retrieval Augmented Generation (RAG)</h3>
+<div id="d55e213f-4a17-480b-af86-232a05e52aca" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:11.940712Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:11.940209Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:11.946509Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:11.945377Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:11.940672Z&quot;}" data-execution_count="20">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href=""></a><span class="kw">def</span> generate_response(query):</span>
 <span id="cb19-2"><a href=""></a>    prompt <span class="op">=</span> build_prompt(query)</span>
 <span id="cb19-3"><a href=""></a>    response <span class="op">=</span> llm.create_chat_completion(</span>
@@ -1298,64 +1412,59 @@ so he no longer has any senses?</code></pre>
 <span id="cb19-8"><a href=""></a>    <span class="cf">return</span> response[<span class="st">"choices"</span>][<span class="dv">0</span>][<span class="st">"message"</span>][<span class="st">"content"</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-
-<section id="retrieval-augmented-generation-rag-4" class="title-slide slide level2 center">
-<h2>Retrieval Augmented Generation (RAG)</h2>
-<div id="6a18ff4d-ce70-4998-aa94-63730b494ef5" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:13.067265Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:13.067067Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:16.411224Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:16.409971Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:13.067245Z&quot;}" data-execution_count="20">
+<section id="retrieval-augmented-generation-rag-4" class="slide level3">
+<h3>Retrieval Augmented Generation (RAG)</h3>
+<div id="6a18ff4d-ce70-4998-aa94-63730b494ef5" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:11.954988Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:11.954382Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:14.677221Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:14.676442Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:11.954948Z&quot;}" data-execution_count="21">
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href=""></a>query <span class="op">=</span> <span class="st">"""Which song is about a guy who is so badly wounded in war</span></span>
 <span id="cb20-2"><a href=""></a><span class="st">so he no longer has any senses?"""</span></span>
 <span id="cb20-3"><a href=""></a><span class="bu">print</span>(generate_response(query))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>The song that is about a guy who is so badly wounded in war that he no longer has any senses is "And Justice For All..: One". The lyrics mention "I'm waking up, I cannot see / That there's not much left of me / Nothing is real but pain now / Hold my breath as I wish for death". This suggests the person has lost his sight, speech, hearing, arms, legs and soul due to war wounds.</code></pre>
+<pre><code>Based on the context provided, the song that is about a guy who is so badly wounded in war that he no longer has any senses is "And Justice For All..: One". The lyrics mention losing sight, speech, hearing, arms, legs, and soul, being trapped in his body, and being left with life in hell.</code></pre>
 </div>
 </div>
 </section>
-
-<section id="retrieval-augmented-generation-rag-5" class="title-slide slide level2 center">
-<h2>Retrieval Augmented Generation (RAG)</h2>
-<div id="18babdf4-80b5-4b91-b854-c4cf37c86a10" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:16.419742Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:16.419191Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:20.139179Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:20.138500Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:16.419698Z&quot;}" data-execution_count="21">
+<section id="retrieval-augmented-generation-rag-5" class="slide level3">
+<h3>Retrieval Augmented Generation (RAG)</h3>
+<div id="18babdf4-80b5-4b91-b854-c4cf37c86a10" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:14.678701Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:14.678188Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:18.744255Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:18.743528Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:14.678661Z&quot;}" data-execution_count="22">
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href=""></a>query <span class="op">=</span> <span class="st">"Which song is about a boy who is having nightmares?"</span></span>
 <span id="cb22-2"><a href=""></a><span class="bu">print</span>(generate_response(query))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>The song that is about a boy who is having nightmares is "The Black Album: Enter Sandman". The lyrics mention "Say your prayers little one", "tuck you in warm within", "keep you free from sin till the sandman he comes", "dreams of war", "dreams of liars", "dreams of dragon's fire", and "sleep with one eye open gripping your pillow tight". These lines suggest that the song is about a child having nightmares and being afraid of the dark.</code></pre>
+<pre><code>The song that is about a boy who is having nightmares is "The Black Album: Enter Sandman". The lyrics mention "Say your prayers little one / don't forget / my son / to include everyone / tuck you in / warm within / keep you free from sin / till the sandman he comes", suggesting a child being comforted before going to sleep and having nightmares. The lyrics also mention "dreams of war / dreams of liars / dreams of dragon's fire / and of things that will bite", which further supports the theme of nightmares.</code></pre>
 </div>
 </div>
 </section>
-
-<section id="retrieval-augmented-generation-rag-6" class="title-slide slide level2 center">
-<h2>Retrieval Augmented Generation (RAG)</h2>
+<section id="retrieval-augmented-generation-rag-6" class="slide level3">
+<h3>Retrieval Augmented Generation (RAG)</h3>
 <p><a href="https://alonsosilva-song-finder-bot.hf.space">https://alonsosilva-song-finder-bot.hf.space</a></p>
-<div id="123ed860-eb3c-4ee8-9fd0-a3a33b2dcf7a" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:20.139812Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:20.139670Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:20.144154Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:20.143558Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:20.139798Z&quot;}" data-execution_count="22">
-<div class="cell-output cell-output-display" data-execution_count="22">
+<div id="123ed860-eb3c-4ee8-9fd0-a3a33b2dcf7a" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:18.745017Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:18.744865Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:18.749215Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:18.748606Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:18.745003Z&quot;}" data-execution_count="23">
+<div class="cell-output cell-output-display" data-execution_count="23">
 
         <iframe width="850" height="450" src="https://alonsosilva-song-finder-bot.hf.space" frameborder="0" allowfullscreen=""></iframe>
         
 </div>
 </div>
 </section>
-
-<section id="retrieval-augmented-generation-rag-7" class="title-slide slide level2 center">
-<h2>Retrieval Augmented Generation (RAG)</h2>
-<div id="74cfe012-9eaa-426f-89ed-ce35c058714b" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:20.144653Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:20.144530Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:22.234724Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:22.234051Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:20.144640Z&quot;}" data-execution_count="23">
+<section id="retrieval-augmented-generation-rag-7" class="slide level3">
+<h3>Retrieval Augmented Generation (RAG)</h3>
+<div id="74cfe012-9eaa-426f-89ed-ce35c058714b" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:18.749781Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:18.749661Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:21.072240Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:21.071125Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:18.749770Z&quot;}" data-execution_count="24">
 <div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href=""></a>query <span class="op">=</span> <span class="st">"How many songs does the black album have?"</span></span>
 <span id="cb24-2"><a href=""></a><span class="bu">print</span>(generate_response(query))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Based on the context provided, the Black Album appears to have 5 songs:
+<pre><code>Based on the provided context, the Black Album appears to have 5 songs. The songs are:
 
 1. My Friend Of Misery
-2. Nothing Else Matters
+2. Nothing Else Matters 
 3. Don't Tread On Me
 4. Sad But True
 5. Holier Than Thou</code></pre>
 </div>
 </div>
 </section>
-
-<section id="retrieval-augmented-generation-rag-8" class="title-slide slide level2 center">
-<h2>Retrieval Augmented Generation (RAG)</h2>
-<div id="e379b242-402d-4698-b111-8b941b7ceb45" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:22.235416Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:22.235273Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:22.241869Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:22.240888Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:22.235403Z&quot;}" data-execution_count="24">
+<section id="retrieval-augmented-generation-rag-8" class="slide level3">
+<h3>Retrieval Augmented Generation (RAG)</h3>
+<div id="e379b242-402d-4698-b111-8b941b7ceb45" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:21.073969Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:21.073443Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:21.082178Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:21.081272Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:21.073926Z&quot;}" data-execution_count="25">
 <div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href=""></a>df.<span class="bu">filter</span>(pl.col(<span class="st">"Album"</span>) <span class="op">==</span> <span class="st">"The Black Album"</span>)[<span class="st">"Song"</span>].to_list()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="24">
+<div class="cell-output cell-output-display" data-execution_count="25">
 <pre><code>["Don't Tread On Me",
  'Nothing Else Matters',
  'Through The Never',
@@ -1377,9 +1486,9 @@ so he no longer has any senses?</code></pre>
 <h1>Graph-only retrieval</h1>
 
 </section>
-<section id="graph-only-retrieval-1" class="title-slide slide level2 center">
-<h2>Graph-only retrieval</h2>
-<div id="5d4378cb-df11-4c71-8ab3-c315cf10ae13" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:22.243654Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:22.242995Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:22.405981Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:22.404726Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:22.243611Z&quot;}" data-execution_count="25">
+<section id="graph-only-retrieval-1" class="slide level3">
+<h3>Graph-only retrieval</h3>
+<div id="5d4378cb-df11-4c71-8ab3-c315cf10ae13" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:33:13.543179Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:33:13.542627Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:33:13.703508Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:33:13.702967Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:33:13.543134Z&quot;}" data-execution_count="101">
 <div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href=""></a><span class="co"># Initialize graph database</span></span>
 <span id="cb28-2"><a href=""></a><span class="im">import</span> shutil</span>
 <span id="cb28-3"><a href=""></a><span class="im">import</span> kuzu</span>
@@ -1389,21 +1498,23 @@ so he no longer has any senses?</code></pre>
 <span id="cb28-7"><a href=""></a>conn <span class="op">=</span> kuzu.Connection(db)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-
-<section id="graph-only-retrieval-2" class="title-slide slide level2 center">
-<h2>Graph-only retrieval</h2>
-<div id="ccffbbae-952e-442a-9474-738fabf01f6b" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:22.406982Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:22.406824Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:22.471305Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:22.470095Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:22.406966Z&quot;}" data-execution_count="26">
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href=""></a><span class="co"># Create schema</span></span>
+<section id="graph-only-retrieval-2" class="slide level3">
+<h3>Graph-only retrieval</h3>
+<div id="ccffbbae-952e-442a-9474-738fabf01f6b" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:33:14.527422Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:33:14.526383Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:33:14.591779Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:33:14.590360Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:33:14.527369Z&quot;}" data-execution_count="102">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href=""></a><span class="co"># Create nodes schema</span></span>
 <span id="cb29-2"><a href=""></a>conn.execute(<span class="st">"CREATE NODE TABLE ARTIST(name STRING, PRIMARY KEY (name))"</span>)</span>
 <span id="cb29-3"><a href=""></a>conn.execute(<span class="st">"CREATE NODE TABLE ALBUM(name STRING, PRIMARY KEY (name))"</span>)</span>
-<span id="cb29-4"><a href=""></a>conn.execute(<span class="st">"CREATE NODE TABLE SONG(ID SERIAL, name STRING, lyrics STRING, PRIMARY KEY(ID))"</span>)</span>
-<span id="cb29-5"><a href=""></a>conn.execute(<span class="st">"CREATE REL TABLE IN_ALBUM(FROM SONG TO ALBUM)"</span>)</span>
-<span id="cb29-6"><a href=""></a>conn.execute(<span class="st">"CREATE REL TABLE FROM_ARTIST(FROM ALBUM TO ARTIST)"</span>)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb29-4"><a href=""></a>conn.execute(</span>
+<span id="cb29-5"><a href=""></a><span class="st">"CREATE NODE TABLE SONG(ID SERIAL,name STRING,lyrics STRING,PRIMARY KEY(ID))"</span></span>
+<span id="cb29-6"><a href=""></a>)</span>
+<span id="cb29-7"><a href=""></a><span class="co"># Create edges schema</span></span>
+<span id="cb29-8"><a href=""></a>conn.execute(<span class="st">"CREATE REL TABLE IN_ALBUM(FROM SONG TO ALBUM)"</span>)</span>
+<span id="cb29-9"><a href=""></a>conn.execute(<span class="st">"CREATE REL TABLE FROM_ARTIST(FROM ALBUM TO ARTIST)"</span>)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="graph-only-retrieval-3" class="slide level3">
 <h3>Graph-only retrieval</h3>
-<div id="475cdbaf-1a22-4c76-ae12-7887e8befeb5" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:22.473087Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:22.472616Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:23.642868Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:23.641432Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:22.473023Z&quot;}" data-execution_count="27">
+<div id="475cdbaf-1a22-4c76-ae12-7887e8befeb5" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:21.296699Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:21.295881Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:22.482612Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:22.481139Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:21.296651Z&quot;}" data-execution_count="28">
 <div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href=""></a><span class="co"># Insert nodes</span></span>
 <span id="cb30-2"><a href=""></a><span class="cf">for</span> artist <span class="kw">in</span> df[<span class="st">"Artist"</span>].unique():</span>
 <span id="cb30-3"><a href=""></a>    conn.execute(<span class="ss">f"CREATE (artist:ARTIST </span><span class="ch">{{</span><span class="ss">name: '</span><span class="sc">{</span>artist<span class="sc">}</span><span class="ss">'</span><span class="ch">}}</span><span class="ss">)"</span>)</span>
@@ -1420,7 +1531,7 @@ so he no longer has any senses?</code></pre>
 </section>
 <section id="graph-only-retrieval-4" class="slide level3">
 <h3>Graph-only retrieval</h3>
-<div id="caea1e10-54da-4dc3-86a7-47e518712b91" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:23.644937Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:23.644312Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:25.321873Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:25.320511Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:23.644890Z&quot;}" data-execution_count="28">
+<div id="caea1e10-54da-4dc3-86a7-47e518712b91" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:22.484567Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:22.484055Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:24.120559Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:24.118803Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:22.484519Z&quot;}" data-execution_count="29">
 <div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href=""></a><span class="co"># Insert edges</span></span>
 <span id="cb31-2"><a href=""></a><span class="cf">for</span> song, album, lyrics <span class="kw">in</span> df.select([<span class="st">"Song"</span>, <span class="st">"Album"</span>, <span class="st">"text"</span>]).rows():</span>
 <span id="cb31-3"><a href=""></a>    replaced_lyrics <span class="op">=</span> lyrics.replace(<span class="st">'"'</span>, <span class="st">"'"</span>)</span>
@@ -1442,7 +1553,7 @@ so he no longer has any senses?</code></pre>
 </section>
 <section id="graph-only-retrieval-5" class="slide level3">
 <h3>Graph-only retrieval</h3>
-<div id="84e62bb3-2d7b-4604-8d8a-299f321a71e4" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:25.323660Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:25.323204Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:25.344953Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:25.343658Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:25.323613Z&quot;}" data-execution_count="29">
+<div id="84e62bb3-2d7b-4604-8d8a-299f321a71e4" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:24.122591Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:24.122095Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:24.142617Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:24.141412Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:24.122542Z&quot;}" data-execution_count="30">
 <div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href=""></a>response <span class="op">=</span> conn.execute(</span>
 <span id="cb32-2"><a href=""></a>    <span class="st">"""</span></span>
 <span id="cb32-3"><a href=""></a><span class="st">    MATCH (a:ALBUM {name: 'The Black Album'})&lt;-[:IN_ALBUM]-(s:SONG) </span></span>
@@ -1453,25 +1564,25 @@ so he no longer has any senses?</code></pre>
 <span id="cb32-8"><a href=""></a>df_response <span class="op">=</span> response.get_as_pl()</span>
 <span id="cb32-9"><a href=""></a></span>
 <span id="cb32-10"><a href=""></a>df_response[<span class="st">"s.name"</span>].to_list()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="29">
-<pre><code>['Wherever I May Roam',
+<div class="cell-output cell-output-display" data-execution_count="30">
+<pre><code>["Don't Tread On Me",
  'The Unforgiven',
- 'Enter Sandman',
- 'Nothing Else Matters',
- 'Sad But True',
- 'The Struggle Within',
- "Don't Tread On Me",
- 'Through The Never',
+ 'The God That Failed',
  'My Friend Of Misery',
+ 'Enter Sandman',
+ 'Sad But True',
  'Holier Than Thou',
+ 'Nothing Else Matters',
  'Of Wolf And Man',
- 'The God That Failed']</code></pre>
+ 'Wherever I May Roam',
+ 'The Struggle Within',
+ 'Through The Never']</code></pre>
 </div>
 </div>
 </section>
 <section id="graph-only-retrieval-6" class="slide level3">
 <h3>Graph-only retrieval</h3>
-<div id="aded8647-e597-4a59-bb53-6cb21acd7104" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:25.346624Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:25.346187Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:25.375631Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:25.374439Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:25.346579Z&quot;}" data-execution_count="30">
+<div id="aded8647-e597-4a59-bb53-6cb21acd7104" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:24.144092Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:24.143640Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:24.174469Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:24.173139Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:24.144062Z&quot;}" data-execution_count="31">
 <div class="sourceCode cell-code" id="cb34"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href=""></a><span class="im">from</span> langchain_community.graphs <span class="im">import</span> KuzuGraph</span>
 <span id="cb34-2"><a href=""></a></span>
 <span id="cb34-3"><a href=""></a>graph <span class="op">=</span> KuzuGraph(db)</span>
@@ -1484,10 +1595,9 @@ Relationships: ['(:ALBUM)-[:FROM_ARTIST]-&gt;(:ARTIST)', '(:SONG)-[:IN_ALBUM]-&g
 </div>
 </div>
 </section>
-
-<section id="graph-only-retrieval-7" class="title-slide slide level2 center">
-<h2>Graph-only retrieval</h2>
-<div id="b2aa0ca5-447c-45c1-b3f6-40237e4bf95d" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:25.377240Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:25.376757Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:25.383853Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:25.382551Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:25.377202Z&quot;}" data-execution_count="31">
+<section id="graph-only-retrieval-7" class="slide level3">
+<h3>Graph-only retrieval</h3>
+<div id="b2aa0ca5-447c-45c1-b3f6-40237e4bf95d" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:24.176257Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:24.175695Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:24.182493Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:24.181435Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:24.176215Z&quot;}" data-execution_count="32">
 <div class="sourceCode cell-code" id="cb36"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href=""></a><span class="kw">def</span> generate_kuzu_prompt(user_query):</span>
 <span id="cb36-2"><a href=""></a>    <span class="cf">return</span> <span class="st">"""Task: Generate Kùzu Cypher statement to query a graph database.</span></span>
 <span id="cb36-3"><a href=""></a></span>
@@ -1511,10 +1621,9 @@ Relationships: ['(:ALBUM)-[:FROM_ARTIST]-&gt;(:ARTIST)', '(:SONG)-[:IN_ALBUM]-&g
 <span id="cb36-21"><a href=""></a><span class="st">The question is:</span><span class="ch">\n</span><span class="st">"""</span> <span class="op">+</span> user_query</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-
-<section id="graph-only-retrieval-8" class="title-slide slide level2 center">
-<h2>Graph-only retrieval</h2>
-<div id="43620885-f376-4fd2-aaa5-03daf91e0c67" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:25.385648Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:25.385194Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:25.397090Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:25.395935Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:25.385602Z&quot;}" data-execution_count="32">
+<section id="graph-only-retrieval-8" class="slide level3">
+<h3>Graph-only retrieval</h3>
+<div id="43620885-f376-4fd2-aaa5-03daf91e0c67" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:24.184246Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:24.183772Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:24.200740Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:24.199603Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:24.184201Z&quot;}" data-execution_count="33">
 <div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href=""></a><span class="kw">def</span> generate_final_prompt(query,cypher_query,col_name,_values):</span>
 <span id="cb37-2"><a href=""></a>    <span class="cf">return</span> <span class="ss">f"""You are an assistant that helps to form nice and human understandable answers.</span></span>
 <span id="cb37-3"><a href=""></a><span class="ss">The information part contains the provided information that you must use to construct an answer.</span></span>
@@ -1537,10 +1646,9 @@ Relationships: ['(:ALBUM)-[:FROM_ARTIST]-&gt;(:ARTIST)', '(:SONG)-[:IN_ALBUM]-&g
 <span id="cb37-20"><a href=""></a><span class="ss">"""</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-
-<section id="graph-only-retrieval-9" class="title-slide slide level2 center">
-<h2>Graph-only retrieval</h2>
-<div id="e5e686ff-979a-438a-bdce-b2b34079adeb" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:25.399195Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:25.398545Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:25.416135Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:25.414793Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:25.399147Z&quot;}" data-execution_count="33">
+<section id="graph-only-retrieval-9" class="slide level3">
+<h3>Graph-only retrieval</h3>
+<div id="e5e686ff-979a-438a-bdce-b2b34079adeb" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:24.202513Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:24.202061Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:24.214957Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:24.213583Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:24.202468Z&quot;}" data-execution_count="34">
 <div class="sourceCode cell-code" id="cb38"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href=""></a><span class="kw">def</span> generate_kg_response(query):</span>
 <span id="cb38-2"><a href=""></a>    prompt <span class="op">=</span> generate_kuzu_prompt(query)</span>
 <span id="cb38-3"><a href=""></a>    cypher_query_response <span class="op">=</span> llm.create_chat_completion(</span>
@@ -1566,10 +1674,9 @@ Relationships: ['(:ALBUM)-[:FROM_ARTIST]-&gt;(:ARTIST)', '(:SONG)-[:IN_ALBUM]-&g
 <span id="cb38-23"><a href=""></a>    <span class="cf">return</span> final_response[<span class="st">"choices"</span>][<span class="dv">0</span>][<span class="st">"message"</span>][<span class="st">"content"</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-
-<section id="graph-only-retrieval-10" class="title-slide slide level2 center">
-<h2>Graph-only retrieval</h2>
-<div id="f3cb2ad1-9a50-4ce0-beff-8aa872593480" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:25.418017Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:25.417543Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:26.544160Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:26.542873Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:25.417970Z&quot;}" data-execution_count="34">
+<section id="graph-only-retrieval-10" class="slide level3">
+<h3>Graph-only retrieval</h3>
+<div id="f3cb2ad1-9a50-4ce0-beff-8aa872593480" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:24.216865Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:24.216269Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:25.473640Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:25.473228Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:24.216820Z&quot;}" data-execution_count="35">
 <div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href=""></a>query <span class="op">=</span> <span class="st">"How many songs does the black album have?"</span></span>
 <span id="cb39-2"><a href=""></a><span class="bu">print</span>(generate_kg_response(query))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -1577,38 +1684,35 @@ Relationships: ['(:ALBUM)-[:FROM_ARTIST]-&gt;(:ARTIST)', '(:SONG)-[:IN_ALBUM]-&g
 </div>
 </div>
 </section>
-
-<section id="graph-only-retrieval-11" class="title-slide slide level2 center">
-<h2>Graph-only retrieval</h2>
-<div id="cc15fa19-985a-4f11-876d-941f58b03e87" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:26.546116Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:26.545350Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:29.043835Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:29.042555Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:26.546071Z&quot;}" data-execution_count="35">
+<section id="graph-only-retrieval-11" class="slide level3">
+<h3>Graph-only retrieval</h3>
+<div id="cc15fa19-985a-4f11-876d-941f58b03e87" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:25.474271Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:25.474119Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:28.383488Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:28.383062Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:25.474257Z&quot;}" data-execution_count="36">
 <div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href=""></a>query <span class="op">=</span> <span class="st">"Which songs does the black album have?"</span></span>
 <span id="cb41-2"><a href=""></a><span class="bu">print</span>(generate_kg_response(query))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>The Black Album has the following songs: Wherever I May Roam, The Unforgiven, Enter Sandman, Nothing Else Matters, Sad But True, The Struggle Within, "Don't Tread On Me", Through The Never, My Friend Of Misery, Holier Than Thou, Of Wolf And Man, and The God That Failed.</code></pre>
+<pre><code>The Black Album has the following songs: "Don't Tread On Me", "The Unforgiven", "The God That Failed", "My Friend Of Misery", "Enter Sandman", "Sad But True", "Holier Than Thou", "Nothing Else Matters", "Of Wolf And Man", "Wherever I May Roam", "The Struggle Within", and "Through The Never".</code></pre>
 </div>
 </div>
 </section>
-
-<section id="graph-only-retrieval-12" class="title-slide slide level2 center">
-<h2>Graph-only retrieval</h2>
+<section id="graph-only-retrieval-12" class="slide level3">
+<h3>Graph-only retrieval</h3>
 <p><a href="https://alonsosilva-song-finder-graph.hf.space">https://alonsosilva-song-finder-graph.hf.space</a></p>
-<div id="cc688384-b9b7-45ca-8e9c-663e114ec317" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:29.044880Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:29.044717Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:29.049152Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:29.048551Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:29.044865Z&quot;}" data-execution_count="36">
-<div class="cell-output cell-output-display" data-execution_count="36">
+<div id="cc688384-b9b7-45ca-8e9c-663e114ec317" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:28.384146Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:28.383991Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:28.387408Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:28.387023Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:28.384132Z&quot;}" data-execution_count="37">
+<div class="cell-output cell-output-display" data-execution_count="37">
 
         <iframe width="850" height="450" src="https://alonsosilva-song-finder-graph.hf.space" frameborder="0" allowfullscreen=""></iframe>
         
 </div>
 </div>
-</section>
-</section>
+</section></section>
 <section>
 <section id="combining-graph-and-vector-retrieval" class="title-slide slide level1 center">
 <h1>Combining graph and vector retrieval</h1>
 
 </section>
-<section id="classification" class="title-slide slide level2 center">
-<h2>Classification</h2>
-<div id="6ab96c2d-8a5f-4d63-a5c5-fe0f7c8241a0" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:29.049809Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:29.049674Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:29.069670Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:29.068481Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:29.049796Z&quot;}" data-execution_count="37">
+<section id="classification" class="slide level3">
+<h3>Classification</h3>
+<div id="6ab96c2d-8a5f-4d63-a5c5-fe0f7c8241a0" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:28.387980Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:28.387843Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:28.406285Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:28.405701Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:28.387966Z&quot;}" data-execution_count="38">
 <div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href=""></a><span class="kw">def</span> generate_hermes_prompt(user_prompt):</span>
 <span id="cb43-2"><a href=""></a>    <span class="cf">return</span> (</span>
 <span id="cb43-3"><a href=""></a>        <span class="st">"&lt;|im_start|&gt;system</span><span class="ch">\n</span><span class="st">"</span></span>
@@ -1621,10 +1725,9 @@ Relationships: ['(:ALBUM)-[:FROM_ARTIST]-&gt;(:ARTIST)', '(:SONG)-[:IN_ALBUM]-&g
 <span id="cb43-10"><a href=""></a>    )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-
-<section id="classification-1" class="title-slide slide level2 center">
-<h2>Classification</h2>
-<div id="89ff3d51-9309-44a5-a065-cd0741134b6f" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:29.071341Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:29.070824Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:29.572842Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:29.571562Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:29.071296Z&quot;}" data-execution_count="38">
+<section id="classification-1" class="slide level3">
+<h3>Classification</h3>
+<div id="89ff3d51-9309-44a5-a065-cd0741134b6f" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:28.407172Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:28.406948Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:28.897401Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:28.896925Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:28.407150Z&quot;}" data-execution_count="39">
 <div class="sourceCode cell-code" id="cb44"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href=""></a><span class="im">from</span> outlines <span class="im">import</span> generate, models</span>
 <span id="cb44-2"><a href=""></a><span class="im">from</span> outlines.samplers <span class="im">import</span> greedy</span>
 <span id="cb44-3"><a href=""></a></span>
@@ -1638,10 +1741,9 @@ Relationships: ['(:ALBUM)-[:FROM_ARTIST]-&gt;(:ARTIST)', '(:SONG)-[:IN_ALBUM]-&g
 <span id="cb44-11"><a href=""></a>    <span class="cf">return</span> response</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-
-<section id="classification-2" class="title-slide slide level2 center">
-<h2>Classification</h2>
-<div id="c835c593-03b4-493c-ad08-a341aa944098" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:29.573609Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:29.573466Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:30.462949Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:30.462453Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:29.573596Z&quot;}" data-execution_count="39">
+<section id="classification-2" class="slide level3">
+<h3>Classification</h3>
+<div id="c835c593-03b4-493c-ad08-a341aa944098" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:28.898065Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:28.897900Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:29.758856Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:29.757978Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:28.898051Z&quot;}" data-execution_count="40">
 <div class="sourceCode cell-code" id="cb45"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href=""></a>queries <span class="op">=</span> [</span>
 <span id="cb45-2"><a href=""></a>    <span class="st">"Which song is about a boy who is having nightmares?"</span>,</span>
 <span id="cb45-3"><a href=""></a>    <span class="st">"Which song is about a guy who is so badly wounded in war so he no longer has any senses?"</span>,</span>
@@ -1668,10 +1770,9 @@ NO
 </div>
 </div>
 </section>
-
-<section id="combining-graph-and-vector-retrieval-1" class="title-slide slide level2 center">
-<h2>Combining graph and vector retrieval</h2>
-<div id="58887490-7ae4-4620-ad43-a497c1587b34" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:30.489358Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:30.488502Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:30.499795Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:30.498650Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:30.489315Z&quot;}" data-execution_count="42">
+<section id="combining-graph-and-vector-retrieval-1" class="slide level3">
+<h3>Combining graph and vector retrieval</h3>
+<div id="58887490-7ae4-4620-ad43-a497c1587b34" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:29.785905Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:29.785305Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:29.796651Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:29.795714Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:29.785867Z&quot;}" data-execution_count="43">
 <div class="sourceCode cell-code" id="cb47"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href=""></a><span class="kw">def</span> get_final_response(query):</span>
 <span id="cb47-2"><a href=""></a>    query_class <span class="op">=</span> get_classification(query)</span>
 <span id="cb47-3"><a href=""></a>    <span class="cf">if</span> query_class <span class="op">==</span> <span class="st">'YES'</span>:</span>
@@ -1681,10 +1782,9 @@ NO
 <span id="cb47-7"><a href=""></a>    <span class="cf">return</span> response</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-
-<section id="combining-graph-and-vector-retrieval-2" class="title-slide slide level2 center">
-<h2>Combining graph and vector retrieval</h2>
-<div id="2803f581-06e1-44c2-9369-4ff506ce090a" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:30.501420Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:30.500921Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:41.589918Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:41.589028Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:30.501379Z&quot;}" data-execution_count="43">
+<section id="combining-graph-and-vector-retrieval-2" class="slide level3">
+<h3>Combining graph and vector retrieval</h3>
+<div id="2803f581-06e1-44c2-9369-4ff506ce090a" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:29.798540Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:29.797725Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:41.830221Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:41.829767Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:29.798501Z&quot;}" data-execution_count="44">
 <div class="sourceCode cell-code" id="cb48"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href=""></a>queries <span class="op">=</span> [</span>
 <span id="cb48-2"><a href=""></a>    <span class="st">"Which song is about a boy who is having nightmares?"</span>,</span>
 <span id="cb48-3"><a href=""></a>    <span class="st">"Which song is about a guy who is so badly wounded in war so he no longer has any senses"</span>,</span>
@@ -1697,33 +1797,31 @@ NO
 <span id="cb48-10"><a href=""></a>    <span class="bu">print</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>**Which song is about a boy who is having nightmares?**
-The song that is about a boy who is having nightmares is "The Black Album: Enter Sandman". The lyrics mention "Say your prayers little one", "tuck you in warm within", "keep you free from sin till the sandman he comes", "dreams of war", "dreams of liars", "dreams of dragon's fire", and "sleep with one eye open gripping your pillow tight". These lines suggest that the song is about a child having nightmares and being afraid of the dark.
+The song that is about a boy who is having nightmares is "The Black Album: Enter Sandman". The lyrics mention "Say your prayers little one / don't forget / my son / to include everyone / tuck you in / warm within / keep you free from sin / till the sandman he comes", suggesting a child being comforted before going to sleep and having nightmares. The lyrics also mention "dreams of war / dreams of liars / dreams of dragon's fire / and of things that will bite", which further supports the theme of nightmares.
 
 **Which song is about a guy who is so badly wounded in war so he no longer has any senses**
-Based on the context provided, the song "One" from the album "And Justice For All.." is about a guy who is so badly wounded in war that he no longer has any senses. The lyrics describe him waking up unable to see, hear, speak, or move, and being trapped in his body as if it were a prison cell. He wishes for death and feels absolute horror and despair.
+Based on the context provided, the song that is about a guy who is so badly wounded in war that he no longer has any senses is "And Justice For All..: One". The lyrics describe a person who has lost their sight, speech, hearing, arms, legs, and soul due to a landmine explosion, and is trapped in their body, experiencing absolute horror and unable to live or die.
 
 **How many songs does the black album have?**
 The Black Album has 12 songs.
 
 **Which songs does the black album have?**
-The Black Album has the following songs: Wherever I May Roam, The Unforgiven, Enter Sandman, Nothing Else Matters, Sad But True, The Struggle Within, "Don't Tread On Me", Through The Never, My Friend Of Misery, Holier Than Thou, Of Wolf And Man, and The God That Failed.
+The Black Album has the following songs: "Don't Tread On Me", "The Unforgiven", "The God That Failed", "My Friend Of Misery", "Enter Sandman", "Sad But True", "Holier Than Thou", "Nothing Else Matters", "Of Wolf And Man", "Wherever I May Roam", "The Struggle Within", and "Through The Never".
 </code></pre>
 </div>
 </div>
 </section>
-
-<section id="combining-graph-and-vectorial-retrieval" class="title-slide slide level2 center">
-<h2>Combining graph and vectorial retrieval</h2>
+<section id="combining-graph-and-vectorial-retrieval" class="slide level3">
+<h3>Combining graph and vectorial retrieval</h3>
 <p><a href="https://alonsosilva-song-finder-graphrag.hf.space">https://alonsosilva-song-finder-graphrag.hf.space</a></p>
-<div id="2420c8f9-2a51-459c-8304-7bf9f9481ccd" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:41.591404Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:41.590920Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:41.598172Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:41.597242Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:41.591361Z&quot;}" data-execution_count="44">
-<div class="cell-output cell-output-display" data-execution_count="44">
+<div id="2420c8f9-2a51-459c-8304-7bf9f9481ccd" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:41.830942Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:41.830749Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:41.835278Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:41.834549Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:41.830926Z&quot;}" data-execution_count="45">
+<div class="cell-output cell-output-display" data-execution_count="45">
 
         <iframe width="850" height="450" src="https://alonsosilva-song-finder-graphrag.hf.space" frameborder="0" allowfullscreen=""></iframe>
         
 </div>
 </div>
-</section>
-</section>
+</section></section>
 <section>
 <section id="what-is-structured-generation" class="title-slide slide level1 center">
 <h1>What is Structured Generation?</h1>
@@ -1763,38 +1861,7 @@ The Black Album has the following songs: Wherever I May Roam, The Unforgiven, En
 </section>
 <section id="structured-outputs-in-code" class="slide level3">
 <h3>Structured Outputs in Code</h3>
-<div id="f9b433ce-757a-486d-b594-b2f0305bb95f" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:41.599640Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:41.599246Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:43.473791Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:43.472964Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:41.599601Z&quot;}" data-scrolled="true" data-execution_count="45">
-<div class="sourceCode cell-code" id="annotated-cell-35"><pre class="sourceCode numberSource python code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode python"><span id="annotated-cell-35-1"><a href="#annotated-cell-35-1"></a><span class="im">import</span> llama_cpp  </span>
-<span id="annotated-cell-35-2"><a href="#annotated-cell-35-2"></a></span>
-<a class="code-annotation-anchor" data-target-cell="annotated-cell-35" data-target-annotation="1" onclick="event.preventDefault();" href="">1</a><span id="annotated-cell-35-3" class="code-annotation-target"><a href="#annotated-cell-35-3"></a>model_id <span class="op">=</span> <span class="st">"NousResearch/Hermes-3-Llama-3.1-8B"</span></span>
-<a class="code-annotation-anchor" data-target-cell="annotated-cell-35" data-target-annotation="2" onclick="event.preventDefault();" href="">2</a><span id="annotated-cell-35-4" class="code-annotation-target"><a href="#annotated-cell-35-4"></a>llm <span class="op">=</span> llama_cpp.Llama(</span>
-<span id="annotated-cell-35-5"><a href="#annotated-cell-35-5"></a>    <span class="st">"/big_storage/llms/models/Hermes-3-Llama-3.1-8B.Q6_K.gguf"</span>,</span>
-<span id="annotated-cell-35-6"><a href="#annotated-cell-35-6"></a>    tokenizer<span class="op">=</span>llama_cpp.llama_tokenizer.LlamaHFTokenizer.from_pretrained(</span>
-<span id="annotated-cell-35-7"><a href="#annotated-cell-35-7"></a>        model_id</span>
-<span id="annotated-cell-35-8"><a href="#annotated-cell-35-8"></a>    ),</span>
-<span id="annotated-cell-35-9"><a href="#annotated-cell-35-9"></a>    n_gpu_layers<span class="op">=-</span><span class="dv">1</span>,</span>
-<span id="annotated-cell-35-10"><a href="#annotated-cell-35-10"></a>    flash_attn<span class="op">=</span><span class="va">True</span>,</span>
-<span id="annotated-cell-35-11"><a href="#annotated-cell-35-11"></a>    n_ctx<span class="op">=</span><span class="dv">8192</span>,</span>
-<span id="annotated-cell-35-12"><a href="#annotated-cell-35-12"></a>    verbose<span class="op">=</span><span class="va">False</span>,</span>
-<span id="annotated-cell-35-13"><a href="#annotated-cell-35-13"></a>    chat_format<span class="op">=</span><span class="st">"chatml-function-calling"</span></span>
-<span id="annotated-cell-35-14"><a href="#annotated-cell-35-14"></a>)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-annotation">
-<dl class="code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-35" data-target-annotation="1">1</dt>
-<dd>
-<span data-code-cell="annotated-cell-35" data-code-lines="3" data-code-annotation="1"><a href="https://nousresearch.com/hermes3/">Hermes 3</a> by <a href="https://nousresearch.com/">NousResearch</a></span>
-</dd>
-<dt data-target-cell="annotated-cell-35" data-target-annotation="2">2</dt>
-<dd>
-<span data-code-cell="annotated-cell-35" data-code-lines="4" data-code-annotation="2"><a href="https://llama-cpp-python.readthedocs.io/">llama-cpp-python</a> python bindings for <a href="https://github.com/ggerganov/llama.cpp">llama.cpp</a></span>
-</dd>
-</dl>
-</div>
-</div>
-</section>
-<section id="structured-outputs-in-code-1" class="slide level3">
-<h3>Structured Outputs in Code</h3>
-<div id="d0884357-5b48-441b-8da5-102f201a46f6" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:43.475367Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:43.474844Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:43.482212Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:43.481245Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:43.475325Z&quot;}" data-execution_count="46">
+<div id="d0884357-5b48-441b-8da5-102f201a46f6" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:41.835885Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:41.835764Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:41.854525Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:41.853427Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:41.835874Z&quot;}" data-execution_count="46">
 <div class="sourceCode cell-code" id="cb50"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a href=""></a><span class="im">from</span> typing <span class="im">import</span> Literal</span>
 <span id="cb50-2"><a href=""></a></span>
 <span id="cb50-3"><a href=""></a><span class="im">from</span> pydantic <span class="im">import</span> BaseModel, Field</span>
@@ -1809,9 +1876,9 @@ The Black Album has the following songs: Wherever I May Roam, The Unforgiven, En
 <span id="cb50-12"><a href=""></a>    )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="structured-outputs-in-code-2" class="slide level3">
+<section id="structured-outputs-in-code-1" class="slide level3">
 <h3>Structured Outputs in Code</h3>
-<div id="2af4f0b6-969b-4c07-9b88-dbddf61d7cd3" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:43.483703Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:43.483201Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:43.959761Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:43.959108Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:43.483662Z&quot;}" data-execution_count="47">
+<div id="2af4f0b6-969b-4c07-9b88-dbddf61d7cd3" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:41.856081Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:41.855558Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:42.349791Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:42.348993Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:41.856042Z&quot;}" data-execution_count="47">
 <div class="sourceCode cell-code" id="cb51"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb51-1"><a href=""></a><span class="im">from</span> langchain_core.utils.function_calling <span class="im">import</span> convert_to_openai_tool</span>
 <span id="cb51-2"><a href=""></a></span>
 <span id="cb51-3"><a href=""></a>tools <span class="op">=</span> [convert_to_openai_tool(Sentiment)]</span>
@@ -1828,9 +1895,9 @@ The Black Album has the following songs: Wherever I May Roam, The Unforgiven, En
 </div>
 </div>
 </section>
-<section id="structured-outputs-in-code-3" class="slide level3">
+<section id="structured-outputs-in-code-2" class="slide level3">
 <h3>Structured Outputs in Code</h3>
-<div id="97c17363-4e29-4e55-a99d-0f07a00081b9" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:43.963457Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:43.963327Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:44.333279Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:44.332812Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:43.963444Z&quot;}" data-execution_count="49">
+<div id="97c17363-4e29-4e55-a99d-0f07a00081b9" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:42.358036Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:42.357132Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:42.688977Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:42.688281Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:42.357994Z&quot;}" data-execution_count="49">
 <div class="sourceCode cell-code" id="cb53" data-code-line-numbers="1-17|1|1,8-9|1,8-9,13-14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb53-1"><a href=""></a>user_input <span class="op">=</span> <span class="st">"You are great"</span></span>
 <span id="cb53-2"><a href=""></a></span>
 <span id="cb53-3"><a href=""></a>output <span class="op">=</span> llm.create_chat_completion(</span>
@@ -1872,7 +1939,7 @@ The Black Album has the following songs: Wherever I May Roam, The Unforgiven, En
 <section id="observation-llms-are-samplers" class="slide level3">
 <h3>Observation: LLMs are samplers</h3>
 <p><a href="https://alonsosilva-nexttokenprediction.hf.space">https://alonsosilva-nexttokenprediction.hf.space</a></p>
-<div id="12fba708-bb3f-4c4a-b092-c946523335a8" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:44.333935Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:44.333779Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:44.337163Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:44.336793Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:44.333921Z&quot;}" data-execution_count="50">
+<div id="12fba708-bb3f-4c4a-b092-c946523335a8" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:42.689677Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:42.689527Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:42.693879Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:42.693278Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:42.689663Z&quot;}" data-execution_count="50">
 <div class="cell-output cell-output-display" data-execution_count="50">
 
         <iframe width="950" height="450" src="https://alonsosilva-nexttokenprediction.hf.space" frameborder="0" allowfullscreen=""></iframe>
@@ -1934,7 +2001,7 @@ The Black Album has the following songs: Wherever I May Roam, The Unforgiven, En
 <img data-src="./assets/what-is-in-a-label.jpg" style="width:25.0%" class="r-stretch"></section>
 <section id="structured-generation-in-code" class="slide level3">
 <h3>Structured Generation in Code</h3>
-<div id="95f4eea3-d2eb-4595-a868-defc0c9b052d" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:44.337758Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:44.337596Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:45.044992Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:45.043732Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:44.337745Z&quot;}" data-execution_count="51">
+<div id="95f4eea3-d2eb-4595-a868-defc0c9b052d" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:42.694526Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:42.694400Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:43.410869Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:43.410056Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:42.694514Z&quot;}" data-execution_count="51">
 <div class="sourceCode cell-code" id="annotated-cell-39" data-code-line-numbers="1-13|12"><pre class="sourceCode numberSource python code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode python"><span id="annotated-cell-39-1"><a href="#annotated-cell-39-1"></a><span class="im">import</span> outlines</span>
 <span id="annotated-cell-39-2"><a href="#annotated-cell-39-2"></a></span>
 <span id="annotated-cell-39-3"><a href="#annotated-cell-39-3"></a><span class="im">import</span> transformers</span>
@@ -1960,7 +2027,7 @@ The Black Album has the following songs: Wherever I May Roam, The Unforgiven, En
 </section>
 <section id="structured-generation-in-code-1" class="slide level3">
 <h3>Structured Generation in Code</h3>
-<div id="cb79677b-e037-4f30-86ad-ed6f6852a32f" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:45.045816Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:45.045658Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:45.238678Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:45.237947Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:45.045801Z&quot;}" data-execution_count="52">
+<div id="cb79677b-e037-4f30-86ad-ed6f6852a32f" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:43.411708Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:43.411548Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:43.604396Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:43.603610Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:43.411695Z&quot;}" data-execution_count="52">
 <div class="sourceCode cell-code" id="cb55" data-code-line-numbers="1-18|1|1,8-9|1,8-9,13-15"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb55-1"><a href=""></a>user_input <span class="op">=</span> <span class="st">"You are great"</span></span>
 <span id="cb55-2"><a href=""></a></span>
 <span id="cb55-3"><a href=""></a>output <span class="op">=</span> llm.create_chat_completion(</span>
@@ -1991,7 +2058,7 @@ The Black Album has the following songs: Wherever I May Roam, The Unforgiven, En
 </section>
 <section id="section-8" class="slide level3">
 <h3></h3>
-<div id="36d9920b-c46a-43ae-b7e6-eb5fa819df2e" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:45.377570Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:45.376876Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:45.769635Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:45.769167Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:45.377517Z&quot;}" data-execution_count="54">
+<div id="36d9920b-c46a-43ae-b7e6-eb5fa819df2e" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:43.739499Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:43.739267Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:44.112619Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:44.112144Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:43.739484Z&quot;}" data-execution_count="54">
 <div class="sourceCode cell-code" id="annotated-cell-41" data-code-line-numbers="1-18|12-13|14-16|1-18"><pre class="sourceCode numberSource python code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode python"><span id="annotated-cell-41-1"><a href="#annotated-cell-41-1"></a>user_input <span class="op">=</span> <span class="st">"You are great"</span></span>
 <span id="annotated-cell-41-2"><a href="#annotated-cell-41-2"></a>output <span class="op">=</span> llm.create_chat_completion(</span>
 <span id="annotated-cell-41-3"><a href="#annotated-cell-41-3"></a>    messages<span class="op">=</span>[</span>
@@ -2040,7 +2107,7 @@ The Black Album has the following songs: Wherever I May Roam, The Unforgiven, En
 </section>
 <section id="consider-a-text" class="slide level3">
 <h3>Consider a text</h3>
-<div id="8b2cfc57-b730-4c50-b52d-c73404e2dcf2" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:45.770290Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:45.770142Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:45.773262Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:45.772902Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:45.770276Z&quot;}" data-execution_count="55">
+<div id="8b2cfc57-b730-4c50-b52d-c73404e2dcf2" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:44.113255Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:44.113102Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:44.116234Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:44.115847Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:44.113242Z&quot;}" data-execution_count="55">
 <div class="sourceCode cell-code" id="cb58"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb58-1"><a href=""></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'./assets/curie.txt'</span>, <span class="st">"r"</span>) <span class="im">as</span> f:</span>
 <span id="cb58-2"><a href=""></a>    curie_text <span class="op">=</span> f.read()</span>
 <span id="cb58-3"><a href=""></a><span class="bu">print</span>(curie_text)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -2058,7 +2125,7 @@ This one, in chemistry, was for the discovery of polonium and radium. In her acc
 </section>
 <section id="chunk-the-text" class="slide level3">
 <h3>Chunk the text</h3>
-<div id="77096b83-b94f-4ec1-98bc-6c4412d77f23" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:45.773799Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:45.773667Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:45.796699Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:45.795579Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:45.773786Z&quot;}" data-execution_count="56">
+<div id="77096b83-b94f-4ec1-98bc-6c4412d77f23" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:44.116771Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:44.116641Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:44.137259Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:44.136558Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:44.116759Z&quot;}" data-execution_count="56">
 <div class="sourceCode cell-code" id="cb60"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb60-1"><a href=""></a>texts <span class="op">=</span> curie_text.split(<span class="st">"</span><span class="ch">\n\n</span><span class="st">"</span>)</span>
 <span id="cb60-2"><a href=""></a>texts</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="56">
@@ -2071,7 +2138,7 @@ This one, in chemistry, was for the discovery of polonium and radium. In her acc
 </section>
 <section id="section-10" class="slide level3">
 <h3></h3>
-<div id="c05af2cc-dcd0-4c6a-95c9-4d1435389ab7" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:45.798427Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:45.797927Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:45.812114Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:45.811018Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:45.798386Z&quot;}" data-execution_count="57">
+<div id="c05af2cc-dcd0-4c6a-95c9-4d1435389ab7" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:44.138727Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:44.138243Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:44.153042Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:44.152106Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:44.138689Z&quot;}" data-execution_count="57">
 <div class="sourceCode cell-code" id="cb62"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb62-1"><a href=""></a><span class="im">from</span> pydantic <span class="im">import</span> BaseModel, Field</span>
 <span id="cb62-2"><a href=""></a><span class="im">from</span> typing <span class="im">import</span> Optional</span>
 <span id="cb62-3"><a href=""></a></span>
@@ -2093,7 +2160,7 @@ This one, in chemistry, was for the discovery of polonium and radium. In her acc
 </section>
 <section id="section-11" class="slide level3">
 <h3></h3>
-<div id="f496e731-b887-482c-ae15-03a70b217844" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:45.825861Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:45.825358Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:45.846955Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:45.845837Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:45.825820Z&quot;}" data-execution_count="59">
+<div id="f496e731-b887-482c-ae15-03a70b217844" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:44.166850Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:44.166365Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:44.188466Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:44.187289Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:44.166810Z&quot;}" data-execution_count="59">
 <div class="sourceCode cell-code" id="cb63"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb63-1"><a href=""></a><span class="im">from</span> typing <span class="im">import</span> List</span>
 <span id="cb63-2"><a href=""></a><span class="im">from</span> langchain_core.utils.function_calling <span class="im">import</span> convert_to_openai_tool</span>
 <span id="cb63-3"><a href=""></a></span>
@@ -2109,7 +2176,7 @@ This one, in chemistry, was for the discovery of polonium and radium. In her acc
 </section>
 <section id="section-12" class="slide level3">
 <h3></h3>
-<div id="7441237a-43a3-4b6e-b5e2-d02e3d79b291" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:45.848737Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:45.848230Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:45.859002Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:45.857873Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:45.848695Z&quot;}" data-execution_count="60">
+<div id="7441237a-43a3-4b6e-b5e2-d02e3d79b291" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:44.190292Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:44.189565Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:44.200950Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:44.199968Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:44.190254Z&quot;}" data-execution_count="60">
 <div class="sourceCode cell-code" id="cb64" data-code-line-numbers="6-9,14-15|1-18"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb64-1"><a href=""></a><span class="kw">def</span> build_messages(text: <span class="bu">str</span>):</span>
 <span id="cb64-2"><a href=""></a>    messages <span class="op">=</span> [</span>
 <span id="cb64-3"><a href=""></a>        {</span>
@@ -2132,7 +2199,7 @@ This one, in chemistry, was for the discovery of polonium and radium. In her acc
 </section>
 <section id="section-13" class="slide level3">
 <h3></h3>
-<div id="f7f3f89e-3984-409d-8293-ba91210fb714" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:45.885073Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:45.884682Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:43:45.890406Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:43:45.889644Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:45.885044Z&quot;}" data-execution_count="62">
+<div id="f7f3f89e-3984-409d-8293-ba91210fb714" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:44.227709Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:44.227374Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:44.233933Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:44.233052Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:44.227676Z&quot;}" data-execution_count="62">
 <div class="sourceCode cell-code" id="annotated-cell-47" data-code-line-numbers="9-13|1-18"><pre class="sourceCode numberSource python code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode python"><span id="annotated-cell-47-1"><a href="#annotated-cell-47-1"></a><span class="kw">def</span> generate_assistant_message(messages):</span>
 <span id="annotated-cell-47-2"><a href="#annotated-cell-47-2"></a>    outlines_logits_processor <span class="op">=</span> outlines.processors.JSONLogitsProcessor(</span>
 <span id="annotated-cell-47-3"><a href="#annotated-cell-47-3"></a>        KnowledgeGraph,</span>
@@ -2167,7 +2234,7 @@ This one, in chemistry, was for the discovery of polonium and radium. In her acc
 </section>
 <section id="section-14" class="title-slide slide level2 center">
 <h2></h2>
-<div id="b4dfcf8c-46d8-40f1-9e23-7ab31febf9cb" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:43:58.180506Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:43:58.180343Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:44:02.126717Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:44:02.126030Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:43:58.180490Z&quot;}" data-execution_count="64">
+<div id="b4dfcf8c-46d8-40f1-9e23-7ab31febf9cb" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:48.460061Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:48.459909Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:25:52.170982Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:25:52.170550Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:48.460048Z&quot;}" data-execution_count="64">
 <div class="sourceCode cell-code" id="cb65"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb65-1"><a href=""></a><span class="kw">def</span> generate_kg(text):</span>
 <span id="cb65-2"><a href=""></a>    messages <span class="op">=</span> build_messages(text)</span>
 <span id="cb65-3"><a href=""></a>    assistant_message <span class="op">=</span> generate_assistant_message(messages)</span>
@@ -2182,7 +2249,7 @@ This one, in chemistry, was for the discovery of polonium and radium. In her acc
 
 <section id="section-15" class="title-slide slide level2 center">
 <h2></h2>
-<div id="e2a213e3-1264-4622-be22-356cfc93f6dd" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:44:06.094827Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:44:06.094663Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:45:23.613033Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:45:23.612208Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:44:06.094812Z&quot;}" data-execution_count="66">
+<div id="e2a213e3-1264-4622-be22-356cfc93f6dd" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:25:55.899502Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:25:55.899345Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:27:11.026048Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:27:11.025538Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:25:55.899489Z&quot;}" data-execution_count="66">
 <div class="sourceCode cell-code" id="cb67"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb67-1"><a href=""></a><span class="im">import</span> json</span>
 <span id="cb67-2"><a href=""></a></span>
 <span id="cb67-3"><a href=""></a>nodes, edges <span class="op">=</span> [], []</span>
@@ -2194,7 +2261,7 @@ This one, in chemistry, was for the discovery of polonium and radium. In her acc
 </section>
 <section id="node-and-edge-type-candidates" class="slide level3">
 <h3>Node and Edge Type Candidates</h3>
-<div id="8bb6b338-f55f-48be-8be0-d8ce1b881559" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:45:23.613841Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:45:23.613685Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:45:23.618614Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:45:23.617960Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:45:23.613827Z&quot;}" data-execution_count="67">
+<div id="8bb6b338-f55f-48be-8be0-d8ce1b881559" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:27:11.026736Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:27:11.026561Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:27:11.030955Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:27:11.030213Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:27:11.026721Z&quot;}" data-execution_count="67">
 <div class="sourceCode cell-code" id="cb68"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb68-1"><a href=""></a><span class="im">from</span> collections <span class="im">import</span> Counter</span>
 <span id="cb68-2"><a href=""></a></span>
 <span id="cb68-3"><a href=""></a><span class="bu">print</span>(</span>
@@ -2206,14 +2273,14 @@ This one, in chemistry, was for the discovery of polonium and radium. In her acc
 <span id="cb68-9"><a href=""></a>             <span class="cf">for</span> edge <span class="kw">in</span> edges[i]])</span>
 <span id="cb68-10"><a href=""></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Counter({'PERSON': 11, 'CONCEPT': 4, 'COUNTRY': 2, 'ELEMENT': 2, 'EVENT': 2, 'CHEMICALELEMENT': 2, 'AWARD': 1})
-Counter({'DISCOVERED': 5, 'STUDIED': 4, 'AWARD': 3, 'MARRIED': 2, 'RELATED_TO': 2, 'RECEIVED': 2, 'DECEASED': 2, 'BORN_IN': 1, 'VISITED': 1, 'COINED': 1, 'NAMED_AFTER': 1, 'IS': 1, 'MET': 1, 'BROTHER': 1, 'PROPOSED': 1, 'MARRIAGE': 1, 'AFFAIR': 1, 'COLLABORATION': 1})</code></pre>
+<pre><code>Counter({'PERSON': 11, 'CONCEPT': 3, 'ELEMENT': 2, 'COUNTRY': 2, 'AWARD': 2, 'EVENT': 2, 'CHEMICALELEMENT': 2})
+Counter({'DISCOVERED': 4, 'STUDIES': 3, 'AWARDED': 2, 'DESCRIBED_AS': 2, 'PARTICIPATES_IN': 2, 'AWARD': 2, 'RECEIVED': 2, 'POSTHUMOUS': 2, 'VISITED': 1, 'ORIGIN': 1, 'NAMED_AFTER': 1, 'MEETS': 1, 'PROPOSES': 1, 'MARRIED_TO': 1, 'RELATIVE': 1, 'DISCOVERS': 1, 'MARRIAGE': 1, 'AFFAIR': 1, 'COLLABORATION': 1, 'MARRIED': 1})</code></pre>
 </div>
 </div>
 </section>
 <section id="section-16" class="slide level3" data-auto-animate="true">
 <h3 data-id="quarto-animate-title"></h3>
-<div id="3b02acea-9e86-4ea9-8407-a178ad14cab6" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:45:23.619263Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:45:23.619135Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:45:23.640040Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:45:23.638933Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:45:23.619250Z&quot;}" data-execution_count="68">
+<div id="3b02acea-9e86-4ea9-8407-a178ad14cab6" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:27:11.032621Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:27:11.031993Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:27:11.055310Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:27:11.054540Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:27:11.032581Z&quot;}" data-execution_count="68">
 <div class="sourceCode cell-code" id="cb70" data-code-line-numbers="8,14"><pre class="sourceCode numberSource python number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode python hljs"><span id="cb70-1" class="hljs-ln-code"><a href=""></a><span class="im">from</span> typing <span class="im">import</span> Literal, Optional</span>
 <span id="cb70-2" class="hljs-ln-code"><a href=""></a><span class="im">from</span> pydantic <span class="im">import</span> BaseModel, Field</span>
 <span id="cb70-3" class="hljs-ln-code"><a href=""></a></span>
@@ -2234,7 +2301,7 @@ Counter({'DISCOVERED': 5, 'STUDIED': 4, 'AWARD': 3, 'MARRIED': 2, 'RELATED_TO': 
 </section>
 <section id="section-17" class="slide level3" data-auto-animate="true">
 <h3 data-id="quarto-animate-title"></h3>
-<div id="22790ddc-7a28-48a5-81ef-e20e5dde1fdb" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:45:23.640815Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:45:23.640610Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:45:23.660460Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:45:23.659473Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:45:23.640795Z&quot;}" data-execution_count="69">
+<div id="22790ddc-7a28-48a5-81ef-e20e5dde1fdb" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:27:11.057204Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:27:11.056410Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:27:11.078035Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:27:11.076873Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:27:11.057164Z&quot;}" data-execution_count="69">
 <div class="sourceCode cell-code" id="cb71" data-code-line-numbers="7-9,15-17"><pre class="sourceCode numberSource python number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode python hljs"><span id="cb71-1" class="hljs-ln-code"><a href=""></a><span class="im">from</span> typing <span class="im">import</span> Literal, Optional</span>
 <span id="cb71-2" class="hljs-ln-code"><a href=""></a><span class="im">from</span> pydantic <span class="im">import</span> BaseModel, Field</span>
 <span id="cb71-3" class="hljs-ln-code"><a href=""></a><span class="kw">class</span> Node(BaseModel):</span>
@@ -2261,7 +2328,7 @@ Counter({'DISCOVERED': 5, 'STUDIED': 4, 'AWARD': 3, 'MARRIED': 2, 'RELATED_TO': 
 <ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Chunk 1</a></li><li><a href="#tabset-1-2">Chunk 2</a></li><li><a href="#tabset-1-3">Chunk 3</a></li><li><a href="#tabset-1-4">Chunk 4</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1">
-<div id="26b720e8-981a-488e-8ed4-340ab24524bc" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:49:16.063245Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:49:16.062544Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:49:16.202083Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:49:16.201013Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:49:16.063187Z&quot;}" data-execution_count="74">
+<div id="26b720e8-981a-488e-8ed4-340ab24524bc" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:28:12.887112Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:28:12.886952Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:28:12.950398Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:28:12.949820Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:28:12.887097Z&quot;}" data-execution_count="73">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb72"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb72-1"><a href=""></a><span class="im">from</span> graphviz <span class="im">import</span> Digraph</span>
@@ -2280,17 +2347,17 @@ Counter({'DISCOVERED': 5, 'STUDIED': 4, 'AWARD': 3, 'MARRIED': 2, 'RELATED_TO': 
 <div class="cell-output cell-output-stdout">
 <pre><code>When Marie Curie came to the United States for the first time, in May 1921, she had already discovered the elements radium and polonium, coined the term “radio-active” and won the Nobel Prize—twice. But the Polish-born scientist, almost pathologically shy and accustomed to spending most of her time in her Paris laboratory, was stunned by the fanfare that greeted her. In 1898 she indeed identified one of the substances and named it polonium, after her homeland. Five months later, she identified a second element, which the world came to know as radium. Curie described the elements she studied as “radio-active.”</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="74">
+<div class="cell-output cell-output-display" data-execution_count="73">
 <div>
 <figure>
-<p><img data-src="IADevs_files/figure-revealjs/cell-74-output-2.svg"></p>
+<p><img data-src="IADevs_files/figure-revealjs/cell-75-output-2.svg"></p>
 </figure>
 </div>
 </div>
 </div>
 </div>
 <div id="tabset-1-2">
-<div id="708cae0a-2caa-444b-a75f-4a5398651c21" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:49:21.147918Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:49:21.147430Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:49:21.217541Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:49:21.216770Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:49:21.147873Z&quot;}" data-execution_count="75">
+<div id="708cae0a-2caa-444b-a75f-4a5398651c21" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:28:12.951334Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:28:12.951069Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:28:13.023059Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:28:13.021901Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:28:12.951309Z&quot;}" data-execution_count="74">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb74"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb74-1"><a href=""></a><span class="im">from</span> graphviz <span class="im">import</span> Digraph</span>
@@ -2309,17 +2376,17 @@ Counter({'DISCOVERED': 5, 'STUDIED': 4, 'AWARD': 3, 'MARRIED': 2, 'RELATED_TO': 
 <div class="cell-output cell-output-stdout">
 <pre><code>In 1894, she met Pierre Curie, a 35-year-old physicist at a French technical college who had been studying crystals and magnetism. More than a decade before, he and his brother Jacques had discovered piezoelectricity, the electric charge produced in solid materials under pressure. Pierre was taken by Marie’s uncommon intellect and drive, and he proposed to her. They were married in 1895 in a civil service attended by family and a few friends.</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="75">
+<div class="cell-output cell-output-display" data-execution_count="74">
 <div>
 <figure>
-<p><img data-src="IADevs_files/figure-revealjs/cell-75-output-2.svg"></p>
+<p><img data-src="IADevs_files/figure-revealjs/cell-76-output-2.svg"></p>
 </figure>
 </div>
 </div>
 </div>
 </div>
 <div id="tabset-1-3">
-<div id="e87f2416-5fe9-4acc-868b-0c5f00bb34c6" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:49:22.253504Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:49:22.253028Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:49:22.335512Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:49:22.334458Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:49:22.253458Z&quot;}" data-execution_count="76">
+<div id="e87f2416-5fe9-4acc-868b-0c5f00bb34c6" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:28:13.024957Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:28:13.024425Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:28:13.107276Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:28:13.105955Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:28:13.024916Z&quot;}" data-execution_count="75">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb76"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb76-1"><a href=""></a><span class="im">from</span> graphviz <span class="im">import</span> Digraph</span>
@@ -2338,17 +2405,17 @@ Counter({'DISCOVERED': 5, 'STUDIED': 4, 'AWARD': 3, 'MARRIED': 2, 'RELATED_TO': 
 <div class="cell-output cell-output-stdout">
 <pre><code>Both Curies shared the Nobel Prize in physics with Becquerel in 1903. It was the first Nobel to be awarded to a woman. In 1911, rumors spread that Curie was having an affair with the prominent physicist Paul Langevin, a man five years her junior who had been Pierre’s student and had worked closely with Albert Einstein. The front-page coverage of the scandal threatened to overshadow another news story later that year: her second Nobel Prize.</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="76">
+<div class="cell-output cell-output-display" data-execution_count="75">
 <div>
 <figure>
-<p><img data-src="IADevs_files/figure-revealjs/cell-76-output-2.svg"></p>
+<p><img data-src="IADevs_files/figure-revealjs/cell-77-output-2.svg"></p>
 </figure>
 </div>
 </div>
 </div>
 </div>
 <div id="tabset-1-4">
-<div id="57a9f50c-73fd-4ffb-b8ac-064e78188996" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:49:23.366026Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:49:23.365553Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:49:23.443323Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:49:23.441952Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:49:23.365982Z&quot;}" data-execution_count="77">
+<div id="57a9f50c-73fd-4ffb-b8ac-064e78188996" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:28:13.109241Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:28:13.108609Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:28:13.191104Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:28:13.190054Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:28:13.109195Z&quot;}" data-execution_count="76">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb78"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb78-1"><a href=""></a><span class="im">from</span> graphviz <span class="im">import</span> Digraph</span>
@@ -2368,10 +2435,10 @@ Counter({'DISCOVERED': 5, 'STUDIED': 4, 'AWARD': 3, 'MARRIED': 2, 'RELATED_TO': 
 <pre><code>This one, in chemistry, was for the discovery of polonium and radium. In her acceptance speech in Stockholm, she paid tribute to her husband but also made clear that her work was independent from his, spelling out their separate contributions and describing the discoveries she had made after his death.
 </code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="77">
+<div class="cell-output cell-output-display" data-execution_count="76">
 <div>
 <figure>
-<p><img data-src="IADevs_files/figure-revealjs/cell-77-output-2.svg"></p>
+<p><img data-src="IADevs_files/figure-revealjs/cell-78-output-2.svg"></p>
 </figure>
 </div>
 </div>
@@ -2382,7 +2449,7 @@ Counter({'DISCOVERED': 5, 'STUDIED': 4, 'AWARD': 3, 'MARRIED': 2, 'RELATED_TO': 
 </section>
 <section id="section-19" class="slide level3">
 <h3></h3>
-<div id="afe3c6c0-ba3c-4410-a0a0-75a58626d744" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:49:24.573732Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:49:24.573262Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:49:24.598482Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:49:24.597323Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:49:24.573687Z&quot;}" data-execution_count="78">
+<div id="afe3c6c0-ba3c-4410-a0a0-75a58626d744" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:28:13.192862Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:28:13.192340Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:28:13.214712Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:28:13.213728Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:28:13.192824Z&quot;}" data-execution_count="77">
 <div class="sourceCode cell-code" id="cb80"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb80-1"><a href=""></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb80-2"><a href=""></a></span>
 <span id="cb80-3"><a href=""></a>df_nodes <span class="op">=</span> pd.DataFrame(nodes[<span class="dv">0</span>])</span>
@@ -2413,7 +2480,7 @@ Counter({'DISCOVERED': 5, 'STUDIED': 4, 'AWARD': 3, 'MARRIED': 2, 'RELATED_TO': 
 </section>
 <section id="insert-nodes-to-the-graph-db" class="slide level3">
 <h3>Insert nodes to the graph db</h3>
-<div id="4ad0957f-e50f-49ab-9a59-e8ab00ffdd3c" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:49:25.626778Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:49:25.626314Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:49:25.907850Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:49:25.906916Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:49:25.626733Z&quot;}" data-execution_count="79">
+<div id="4ad0957f-e50f-49ab-9a59-e8ab00ffdd3c" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:28:13.215967Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:28:13.215566Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:28:13.473264Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:28:13.471992Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:28:13.215940Z&quot;}" data-execution_count="78">
 <div class="sourceCode cell-code" id="cb81"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb81-1"><a href=""></a><span class="im">import</span> kuzu</span>
 <span id="cb81-2"><a href=""></a></span>
 <span id="cb81-3"><a href=""></a>db <span class="op">=</span> kuzu.Database()</span>
@@ -2436,7 +2503,7 @@ Counter({'DISCOVERED': 5, 'STUDIED': 4, 'AWARD': 3, 'MARRIED': 2, 'RELATED_TO': 
 </section>
 <section id="check-for-nodes" class="slide level3">
 <h3>Check for nodes</h3>
-<div id="3caa6640-daac-4a6c-8ea0-d6fe6d39104e" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:49:26.946975Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:49:26.946475Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:49:26.955456Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:49:26.954150Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:49:26.946929Z&quot;}" data-execution_count="80">
+<div id="3caa6640-daac-4a6c-8ea0-d6fe6d39104e" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:28:13.474875Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:28:13.474464Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:28:13.481525Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:28:13.480540Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:28:13.474836Z&quot;}" data-execution_count="79">
 <div class="sourceCode cell-code" id="cb82"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb82-1"><a href=""></a>result <span class="op">=</span> conn.execute(<span class="st">"MATCH (person:Person) RETURN person.name;"</span>)</span>
 <span id="cb82-2"><a href=""></a><span class="cf">while</span> result.has_next():</span>
 <span id="cb82-3"><a href=""></a>    <span class="bu">print</span>(result.get_next())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -2450,7 +2517,7 @@ Counter({'DISCOVERED': 5, 'STUDIED': 4, 'AWARD': 3, 'MARRIED': 2, 'RELATED_TO': 
 </section>
 <section id="insert-edges-to-the-graph-db" class="slide level3">
 <h3>Insert edges to the graph db</h3>
-<div id="3f26535a-7ce4-4f72-86df-e9d633818a56" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:49:27.982924Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:49:27.982458Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:49:28.036027Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:49:28.034753Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:49:27.982881Z&quot;}" data-scrolled="true" data-execution_count="81">
+<div id="3f26535a-7ce4-4f72-86df-e9d633818a56" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:28:13.483557Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:28:13.482614Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:28:13.530775Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:28:13.529862Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:28:13.483518Z&quot;}" data-scrolled="true" data-execution_count="80">
 <div class="sourceCode cell-code" id="cb84"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb84-1"><a href=""></a>conn.execute(<span class="st">"CREATE REL TABLE Awarded(FROM Person TO Award)"</span>)<span class="op">;</span> <span class="co"># create schema</span></span>
 <span id="cb84-2"><a href=""></a>conn.execute(<span class="st">"CREATE REL TABLE Discovered(FROM Person TO Discovery)"</span>)<span class="op">;</span></span>
 <span id="cb84-3"><a href=""></a>conn.execute(<span class="st">"CREATE REL TABLE Interpersonal_Relationship(FROM Person TO Person)"</span>)<span class="op">;</span></span>
@@ -2472,7 +2539,7 @@ Counter({'DISCOVERED': 5, 'STUDIED': 4, 'AWARD': 3, 'MARRIED': 2, 'RELATED_TO': 
 </section>
 <section id="check-for-edges" class="slide level3">
 <h3>Check for edges</h3>
-<div id="0b73ebae-6b90-41ba-953d-b7005a5384fb" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:49:29.104971Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:49:29.104492Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:49:29.121790Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:49:29.120451Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:49:29.104926Z&quot;}" data-execution_count="82">
+<div id="0b73ebae-6b90-41ba-953d-b7005a5384fb" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:28:13.531546Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:28:13.531354Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:28:13.539757Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:28:13.538821Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:28:13.531525Z&quot;}" data-execution_count="81">
 <div class="sourceCode cell-code" id="cb85"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb85-1"><a href=""></a>result <span class="op">=</span> conn.execute(<span class="st">"MATCH (a)-[:DISCOVERED]-&gt;(c) RETURN a.name, c.name;"</span>)</span>
 <span id="cb85-2"><a href=""></a><span class="cf">while</span> result.has_next():</span>
 <span id="cb85-3"><a href=""></a>    <span class="bu">print</span>(result.get_next())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -2503,7 +2570,7 @@ Counter({'DISCOVERED': 5, 'STUDIED': 4, 'AWARD': 3, 'MARRIED': 2, 'RELATED_TO': 
 </section>
 <section id="tool-query-checker" class="slide level3">
 <h3>Tool: Query Checker</h3>
-<div id="d2435b60-205e-478c-93f7-8c6112147dc7" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:49:30.157019Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:49:30.156549Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:49:30.163693Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:49:30.162303Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:49:30.156976Z&quot;}" data-execution_count="83">
+<div id="d2435b60-205e-478c-93f7-8c6112147dc7" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:28:13.540805Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:28:13.540505Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:28:13.546789Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:28:13.545705Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:28:13.540773Z&quot;}" data-execution_count="82">
 <div class="sourceCode cell-code" id="cb87"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb87-1"><a href=""></a><span class="kw">def</span> build_kuzu_query_checker_prompt(cypher_query):</span>
 <span id="cb87-2"><a href=""></a>    <span class="cf">return</span> (</span>
 <span id="cb87-3"><a href=""></a>    <span class="ss">f"</span><span class="ch">\n</span><span class="sc">{</span>cypher_query<span class="sc">}</span><span class="ch">\n</span><span class="ss">"</span></span>
@@ -2522,7 +2589,7 @@ Counter({'DISCOVERED': 5, 'STUDIED': 4, 'AWARD': 3, 'MARRIED': 2, 'RELATED_TO': 
 </section>
 <section id="tool-query-checker-1" class="slide level3">
 <h3>Tool: Query Checker</h3>
-<div id="fa2b31ae-eaea-48c3-a0ca-256b3d124ec1" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:49:31.189880Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:49:31.189424Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:49:31.771877Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:49:31.770906Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:49:31.189837Z&quot;}" data-execution_count="84">
+<div id="fa2b31ae-eaea-48c3-a0ca-256b3d124ec1" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:28:13.547661Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:28:13.547438Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:28:14.126651Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:28:14.126295Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:28:13.547641Z&quot;}" data-execution_count="83">
 <div class="sourceCode cell-code" id="cb88"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb88-1"><a href=""></a><span class="kw">def</span> query_checker_tool(cypher_query):</span>
 <span id="cb88-2"><a href=""></a>    user_prompt <span class="op">=</span> build_kuzu_query_checker_prompt(cypher_query)</span>
 <span id="cb88-3"><a href=""></a>    response <span class="op">=</span> llm.create_chat_completion(</span>
@@ -2534,14 +2601,14 @@ Counter({'DISCOVERED': 5, 'STUDIED': 4, 'AWARD': 3, 'MARRIED': 2, 'RELATED_TO': 
 <span id="cb88-9"><a href=""></a>query_checker_tool(</span>
 <span id="cb88-10"><a href=""></a><span class="st">"MATCH (p:Person)-[:Discovered]-&lt;(:Discovery {name: 'Polonium'})</span><span class="ch">\n</span><span class="st">RETURN *"</span></span>
 <span id="cb88-11"><a href=""></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="84">
+<div class="cell-output cell-output-display" data-execution_count="83">
 <pre><code>"MATCH (p:Person)-[:Discovered]-&gt;(d:Discovery {name: 'Polonium'})\nRETURN *"</code></pre>
 </div>
 </div>
 </section>
 <section id="tool-query-generator-executor" class="slide level3">
 <h3>Tool: Query Generator + Executor</h3>
-<div id="abbf8a5f-9c19-4f79-bc73-cca923ce5278" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:49:33.055493Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:49:33.055025Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:49:33.098792Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:49:33.097204Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:49:33.055450Z&quot;}" data-execution_count="86">
+<div id="abbf8a5f-9c19-4f79-bc73-cca923ce5278" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:28:14.888976Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:28:14.888845Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:28:14.902029Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:28:14.901365Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:28:14.888964Z&quot;}" data-execution_count="85">
 <div class="sourceCode cell-code" id="cb90"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb90-1"><a href=""></a><span class="im">from</span> langchain_community.graphs <span class="im">import</span> KuzuGraph</span>
 <span id="cb90-2"><a href=""></a></span>
 <span id="cb90-3"><a href=""></a>graph_db_schema <span class="op">=</span> KuzuGraph(db).get_schema</span>
@@ -2556,7 +2623,7 @@ Relationships: ['(:Person)-[:Awarded]-&gt;(:Award)', '(:Person)-[:Discovered]-&g
 </section>
 <section id="tool-query-generator-executor-1" class="slide level3">
 <h3>Tool: Query Generator + Executor</h3>
-<div id="185e930b-2ff3-4d59-90d2-43da580a266f" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:49:34.025622Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:49:34.025158Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:49:34.032624Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:49:34.031238Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:49:34.025580Z&quot;}" data-execution_count="87">
+<div id="185e930b-2ff3-4d59-90d2-43da580a266f" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:28:14.902712Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:28:14.902566Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:28:14.912054Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:28:14.910908Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:28:14.902698Z&quot;}" data-execution_count="86">
 <div class="sourceCode cell-code" id="cb92"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb92-1"><a href=""></a><span class="kw">def</span> build_kuzu_prompt(query, graph_db_schema<span class="op">=</span>graph_db_schema):</span>
 <span id="cb92-2"><a href=""></a>    <span class="cf">return</span> <span class="st">"""Task: Generate Kùzu Cypher statement to query a graph database.</span></span>
 <span id="cb92-3"><a href=""></a></span>
@@ -2581,7 +2648,7 @@ Relationships: ['(:Person)-[:Awarded]-&gt;(:Award)', '(:Person)-[:Discovered]-&g
 </section>
 <section id="tool-query-generator-executor-2" class="slide level3">
 <h3>Tool: Query Generator + Executor</h3>
-<div id="37dfc608-8bc4-4c95-a381-bd116f620b2d" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:49:34.939472Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:49:34.938615Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:49:36.476449Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:49:36.475804Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:49:34.939425Z&quot;}" data-execution_count="88">
+<div id="37dfc608-8bc4-4c95-a381-bd116f620b2d" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:28:14.913283Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:28:14.912849Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:28:16.456333Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:28:16.455562Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:28:14.913263Z&quot;}" data-execution_count="87">
 <div class="sourceCode cell-code" id="cb93"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb93-1"><a href=""></a><span class="kw">def</span> query_generator_tool(query):</span>
 <span id="cb93-2"><a href=""></a>    user_prompt <span class="op">=</span> build_kuzu_prompt(query)</span>
 <span id="cb93-3"><a href=""></a>    output <span class="op">=</span> llm.create_chat_completion(</span>
@@ -2599,14 +2666,14 @@ Relationships: ['(:Person)-[:Awarded]-&gt;(:Award)', '(:Person)-[:Discovered]-&g
 <div class="cell-output cell-output-stdout">
 <pre><code> Cypher query: MATCH (p:Person {name: 'Marie Curie'})-[:Discovered]-&gt;(d:Discovery) RETURN d.name </code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="88">
+<div class="cell-output cell-output-display" data-execution_count="87">
 <pre><code>"[d.name: ['Radium', 'Polonium']]"</code></pre>
 </div>
 </div>
 </section>
 <section id="tool-conversational-response" class="slide level3">
 <h3>Tool: Conversational Response</h3>
-<div id="d642ad6a-872d-487c-9d33-07833e5fa25d" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:49:38.831338Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:49:38.830847Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:49:38.837249Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:49:38.835949Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:49:38.831291Z&quot;}" data-execution_count="90">
+<div id="d642ad6a-872d-487c-9d33-07833e5fa25d" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:28:17.987819Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:28:17.987683Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:28:17.990170Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:28:17.989811Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:28:17.987807Z&quot;}" data-execution_count="89">
 <div class="sourceCode cell-code" id="cb96"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb96-1"><a href=""></a><span class="kw">def</span> conversational_response(text):</span>
 <span id="cb96-2"><a href=""></a>    <span class="cf">return</span> text</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -2614,7 +2681,7 @@ Relationships: ['(:Person)-[:Awarded]-&gt;(:Award)', '(:Person)-[:Discovered]-&g
 
 <section id="react-agent" class="title-slide slide level2 center">
 <h2>ReAct agent</h2>
-<div id="27717ff4-7a0e-4e1f-a520-034bc61336fb" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:49:40.445388Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:49:40.444918Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:49:40.455521Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:49:40.454304Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:49:40.445343Z&quot;}" data-execution_count="92">
+<div id="27717ff4-7a0e-4e1f-a520-034bc61336fb" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:28:18.012110Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:28:18.011899Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:28:18.023978Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:28:18.023222Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:28:18.012091Z&quot;}" data-execution_count="91">
 <div class="sourceCode cell-code" id="cb97"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb97-1"><a href=""></a><span class="im">from</span> pydantic <span class="im">import</span> BaseModel, Field</span>
 <span id="cb97-2"><a href=""></a></span>
 <span id="cb97-3"><a href=""></a></span>
@@ -2635,7 +2702,7 @@ Relationships: ['(:Person)-[:Awarded]-&gt;(:Award)', '(:Person)-[:Discovered]-&g
 </section>
 <section id="react-agent-1" class="slide level3">
 <h3>ReAct Agent</h3>
-<div id="b1a533cf-d7da-4d06-9b79-0fd346c08715" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:49:41.631936Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:49:41.631333Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:49:41.639719Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:49:41.638515Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:49:41.631891Z&quot;}" data-execution_count="93">
+<div id="b1a533cf-d7da-4d06-9b79-0fd346c08715" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:28:18.025203Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:28:18.024834Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:28:18.043021Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:28:18.041877Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:28:18.025177Z&quot;}" data-execution_count="92">
 <div class="sourceCode cell-code" id="cb98"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb98-1"><a href=""></a><span class="kw">class</span> Final_Answer(BaseModel):</span>
 <span id="cb98-2"><a href=""></a>    Scratchpad: <span class="bu">str</span> <span class="op">=</span> Field(</span>
 <span id="cb98-3"><a href=""></a>        ...,</span>
@@ -2648,14 +2715,14 @@ Relationships: ['(:Person)-[:Awarded]-&gt;(:Award)', '(:Person)-[:Discovered]-&g
 </section>
 <section id="react-agent-2" class="slide level3">
 <h3>ReAct Agent</h3>
-<div id="dd910b2a-7e44-4d80-901a-703d53c1c139" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:49:42.741034Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:49:42.740428Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:49:42.748268Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:49:42.747026Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:49:42.740987Z&quot;}" data-execution_count="94">
+<div id="dd910b2a-7e44-4d80-901a-703d53c1c139" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:28:18.044808Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:28:18.044293Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:28:18.057048Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:28:18.055886Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:28:18.044768Z&quot;}" data-execution_count="93">
 <div class="sourceCode cell-code" id="cb99"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb99-1"><a href=""></a><span class="kw">class</span> Decision(BaseModel):</span>
 <span id="cb99-2"><a href=""></a>    Decision: Reason_and_Act <span class="op">|</span> Final_Answer</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="react-agent-3" class="slide level3">
 <h3>ReAct Agent</h3>
-<div id="689d319e-f4bc-4ece-b208-5500400137c6" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:49:44.130606Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:49:44.130003Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:49:44.141653Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:49:44.140428Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:49:44.130561Z&quot;}" data-execution_count="95">
+<div id="689d319e-f4bc-4ece-b208-5500400137c6" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:28:18.058722Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:28:18.058296Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:28:18.073271Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:28:18.072112Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:28:18.058683Z&quot;}" data-execution_count="94">
 <div class="sourceCode cell-code" id="cb100"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb100-1"><a href=""></a><span class="im">from</span> outlines <span class="im">import</span> generate, models</span>
 <span id="cb100-2"><a href=""></a><span class="im">from</span> outlines.fsm.json_schema <span class="im">import</span> build_regex_from_schema, convert_json_schema_to_str</span>
 <span id="cb100-3"><a href=""></a></span>
@@ -2666,7 +2733,7 @@ Relationships: ['(:Person)-[:Awarded]-&gt;(:Award)', '(:Person)-[:Discovered]-&g
 </section>
 <section id="react-agent-4" class="slide level3">
 <h3>ReAct Agent</h3>
-<div id="2e4efc83-ce6c-4cec-b5e3-c9ceb9acd169" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:49:45.582686Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:49:45.582207Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:49:45.590830Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:49:45.589629Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:49:45.582642Z&quot;}" data-execution_count="96">
+<div id="2e4efc83-ce6c-4cec-b5e3-c9ceb9acd169" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:28:18.074971Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:28:18.074559Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:28:18.086266Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:28:18.085292Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:28:18.074932Z&quot;}" data-execution_count="95">
 <div class="sourceCode cell-code" id="cb101" data-code-line-numbers="1-27|6-7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb101-1"><a href=""></a><span class="kw">def</span> generate_hermes_prompt(question, schema<span class="op">=</span><span class="st">""</span>):</span>
 <span id="cb101-2"><a href=""></a>    <span class="cf">return</span> (</span>
 <span id="cb101-3"><a href=""></a>        <span class="st">"&lt;|im_start|&gt;system</span><span class="ch">\n</span><span class="st">"</span></span>
@@ -2698,7 +2765,7 @@ Relationships: ['(:Person)-[:Awarded]-&gt;(:Award)', '(:Person)-[:Discovered]-&g
 </section>
 <section id="react-agent-5" class="slide level3">
 <h3>ReAct Agent</h3>
-<div id="db23580f-efd0-417e-8e1a-e12247342d80" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:49:46.571626Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:49:46.571151Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:49:46.579802Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:49:46.578284Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:49:46.571581Z&quot;}" data-execution_count="97">
+<div id="db23580f-efd0-417e-8e1a-e12247342d80" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:28:18.087787Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:28:18.087339Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:28:18.104129Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:28:18.102992Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:28:18.087753Z&quot;}" data-execution_count="96">
 <div class="sourceCode cell-code" id="cb102"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb102-1"><a href=""></a><span class="kw">class</span> ChatBot:</span>
 <span id="cb102-2"><a href=""></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, prompt<span class="op">=</span><span class="st">""</span>):</span>
 <span id="cb102-3"><a href=""></a>        <span class="va">self</span>.prompt <span class="op">=</span> prompt</span>
@@ -2716,7 +2783,7 @@ Relationships: ['(:Person)-[:Awarded]-&gt;(:Award)', '(:Person)-[:Discovered]-&g
 </section>
 <section id="react-agent-6" class="slide level3">
 <h3>ReAct Agent</h3>
-<div id="fa683139-0d7a-4be8-a783-6b0362b4ad00" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:49:47.589011Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:49:47.588549Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:49:47.604159Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:49:47.602720Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:49:47.588968Z&quot;}" data-execution_count="98">
+<div id="fa683139-0d7a-4be8-a783-6b0362b4ad00" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:28:18.106435Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:28:18.105562Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:28:18.125287Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:28:18.124120Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:28:18.106391Z&quot;}" data-execution_count="97">
 <div class="sourceCode cell-code" id="cb103"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb103-1"><a href=""></a><span class="im">import</span> json</span>
 <span id="cb103-2"><a href=""></a></span>
 <span id="cb103-3"><a href=""></a><span class="kw">def</span> query(question, max_turns<span class="op">=</span><span class="dv">5</span>):</span>
@@ -2782,7 +2849,7 @@ Relationships: ['(:Person)-[:Awarded]-&gt;(:Award)', '(:Person)-[:Discovered]-&g
 </section>
 <section id="react-agent-7" class="slide level3">
 <h3>ReAct Agent</h3>
-<div id="3c53a402-9ab6-40de-aaef-7620c52fbc65" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:49:48.782916Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:49:48.782461Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:49:55.137911Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:49:55.136732Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:49:48.782875Z&quot;}" data-execution_count="99">
+<div id="3c53a402-9ab6-40de-aaef-7620c52fbc65" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:28:18.126977Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:28:18.126560Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:28:24.506042Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:28:24.505585Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:28:18.126937Z&quot;}" data-execution_count="98">
 <div class="sourceCode cell-code" id="cb104"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb104-1"><a href=""></a>query(<span class="st">"Query the database to see which discovery did Pierre Curie do?"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code> Scratchpad:  
@@ -2795,14 +2862,14 @@ Relationships: ['(:Person)-[:Awarded]-&gt;(:Award)', '(:Person)-[:Discovered]-&g
  Scratchpad: Pierre Curie is known for discovering piezoelectricity. 
  Final Answer: Pierre Curie discovered piezoelectricity. </code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="99">
+<div class="cell-output cell-output-display" data-execution_count="98">
 <pre><code>'Pierre Curie discovered piezoelectricity.'</code></pre>
 </div>
 </div>
 </section>
 <section id="react-agent-8" class="slide level3">
 <h3>ReAct Agent</h3>
-<div id="d97abeac-ce4f-4959-be90-9ad2b858d105" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:50:02.958190Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:50:02.957682Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:50:09.436774Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:50:09.436031Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:50:02.958145Z&quot;}" data-execution_count="100">
+<div id="d97abeac-ce4f-4959-be90-9ad2b858d105" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:28:24.506719Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:28:24.506551Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:28:30.892579Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:28:30.891888Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:28:24.506704Z&quot;}" data-execution_count="99">
 <div class="sourceCode cell-code" id="cb107"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb107-1"><a href=""></a>query(<span class="st">"Query the database to see which discovery did Marie Curie do?"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code> Scratchpad:  
@@ -2815,14 +2882,14 @@ Relationships: ['(:Person)-[:Awarded]-&gt;(:Award)', '(:Person)-[:Discovered]-&g
  Scratchpad: Marie Curie is known for discovering Radium and Polonium. 
  Final Answer: Marie Curie discovered Radium and Polonium. </code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="100">
+<div class="cell-output cell-output-display" data-execution_count="99">
 <pre><code>'Marie Curie discovered Radium and Polonium.'</code></pre>
 </div>
 </div>
 </section>
 <section id="react-agent-9" class="slide level3">
 <h3>ReAct Agent</h3>
-<div id="7081b3ab-2cdb-4ec3-90f8-56db1f5d53f0" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T08:50:10.950616Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T08:50:10.950105Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T08:50:14.994450Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T08:50:14.993647Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T08:50:10.950573Z&quot;}" data-execution_count="101">
+<div id="7081b3ab-2cdb-4ec3-90f8-56db1f5d53f0" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-12-08T09:28:30.893345Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-12-08T09:28:30.893181Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-12-08T09:28:34.889164Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-12-08T09:28:34.888358Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2024-12-08T09:28:30.893330Z&quot;}" data-execution_count="100">
 <div class="sourceCode cell-code" id="cb110"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb110-1"><a href=""></a>query(<span class="st">"Tell me a joke."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code> Scratchpad:  
@@ -2835,7 +2902,7 @@ Answer to the user.
  Scratchpad: To provide a joke, I will use my knowledge base to find a suitable joke that is appropriate for all ages. 
  Final Answer: Why don't scientists trust atoms? Because they make up everything! </code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="101">
+<div class="cell-output cell-output-display" data-execution_count="100">
 <pre><code>"Why don't scientists trust atoms? Because they make up everything!"</code></pre>
 </div>
 </div>
