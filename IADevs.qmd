@@ -96,7 +96,7 @@ queries = [
 
 # Vector-only retrieval
 
-## Vector-only retrieval
+### Vector-only retrieval
 
 ```{python}
 # #| echo: true
@@ -126,7 +126,7 @@ df = df.with_columns(
 df.head()
 ```
 
-## Vector-only retrieval
+### Vector-only retrieval
 
 ```{python}
 #| echo: true
@@ -134,10 +134,11 @@ print(df.select("text")[1].item()[:300])
 print("...")
 ```
 
-## Vector-only retrieval
+### Vector-only retrieval
 
 ```{python}
 #| echo: true
+# Initialize vector database
 import shutil
 import lancedb
 
@@ -145,7 +146,7 @@ shutil.rmtree("lancedb_explorer", ignore_errors=True)
 db = lancedb.connect("lancedb_explorer")
 ```
 
-## Vector-only retrieval
+### Vector-only retrieval
 
 ```{python}
 #| echo: true
@@ -158,7 +159,7 @@ embeddings = (
 )
 ```
 
-## Vector-only retrieval
+### Vector-only retrieval
 
 ```{python}
 #| echo: true
@@ -173,10 +174,11 @@ class Songs(LanceModel):
     vector: Vector(embeddings.ndims()) = embeddings.VectorField()
 ```
 
-## Vector-only retrieval
+### Vector-only retrieval
 
 ```{python}
 #| echo: true
+# Add dataframe to the vector database
 table = db.create_table("Songs", schema=Songs)
 table.add(data=df)
 ```
@@ -191,7 +193,7 @@ reranker = LinearCombinationReranker(
 )  # Use 0.9 as the weight for semantic search
 ```
 
-## Vector-only retrieval
+### Vector-only retrieval
 
 ```{python}
 #| echo: true
@@ -200,7 +202,7 @@ results = table.search(query).limit(10).to_polars()
 results["Song"].to_list()
 ```
 
-## Vector-only retrieval
+### Vector-only retrieval
 
 ```{python}
 #| echo: true
@@ -218,7 +220,7 @@ results["Song"].to_list()
 IFrame("https://alonsosilva-song-finder.hf.space", width=850, height=450)
 ```
 
-## Retrieval Augmented Generation (RAG)
+### Retrieval Augmented Generation (RAG)
 
 ```{python}
 # #| echo: true
@@ -257,7 +259,7 @@ llm = llama_cpp.Llama(  # <2>
 1. [Hermes 3](https://nousresearch.com/hermes3/) by [NousResearch](https://nousresearch.com/)
 2. [llama-cpp-python](https://llama-cpp-python.readthedocs.io/) python bindings for [llama.cpp](https://github.com/ggerganov/llama.cpp)
 
-## Retrieval Augmented Generation (RAG)
+### Retrieval Augmented Generation (RAG)
 
 ```{python}
 #| echo: true
@@ -273,7 +275,7 @@ def get_relevant_texts(query):
 print(get_relevant_texts(query))
 ```
 
-## Retrieval Augmented Generation (RAG)
+### Retrieval Augmented Generation (RAG)
 
 ```{python}
 #| echo: true
@@ -289,7 +291,7 @@ def build_prompt(query):
 print(build_prompt(query))
 ```
 
-## Retrieval Augmented Generation (RAG)
+### Retrieval Augmented Generation (RAG)
 
 ```{python}
 #| echo: true
@@ -303,7 +305,7 @@ def generate_response(query):
     return response["choices"][0]["message"]["content"]
 ```
 
-## Retrieval Augmented Generation (RAG)
+### Retrieval Augmented Generation (RAG)
 
 ```{python}
 #| echo: true
@@ -312,7 +314,7 @@ so he no longer has any senses?"""
 print(generate_response(query))
 ```
 
-## Retrieval Augmented Generation (RAG)
+### Retrieval Augmented Generation (RAG)
 
 ```{python}
 #| echo: true
@@ -320,7 +322,7 @@ query = "Which song is about a boy who is having nightmares?"
 print(generate_response(query))
 ```
 
-## Retrieval Augmented Generation (RAG)
+### Retrieval Augmented Generation (RAG)
 
 [https://alonsosilva-song-finder-bot.hf.space](https://alonsosilva-song-finder-bot.hf.space)
 
@@ -328,7 +330,7 @@ print(generate_response(query))
 IFrame("https://alonsosilva-song-finder-bot.hf.space", width=850, height=450)
 ```
 
-## Retrieval Augmented Generation (RAG)
+### Retrieval Augmented Generation (RAG)
 
 ```{python}
 #| echo: true
@@ -336,7 +338,7 @@ query = "How many songs does the black album have?"
 print(generate_response(query))
 ```
 
-## Retrieval Augmented Generation (RAG)
+### Retrieval Augmented Generation (RAG)
 
 ```{python}
 #| echo: true
@@ -345,7 +347,7 @@ df.filter(pl.col("Album") == "The Black Album")["Song"].to_list()
 
 # Graph-only retrieval
 
-## Graph-only retrieval
+### Graph-only retrieval
 
 ```{python}
 #| echo: true
@@ -358,14 +360,17 @@ db = kuzu.Database("kuzudb_explorer")
 conn = kuzu.Connection(db)
 ```
 
-## Graph-only retrieval
+### Graph-only retrieval
 
 ```{python}
 #| echo: true
-# Create schema
+# Create nodes schema
 conn.execute("CREATE NODE TABLE ARTIST(name STRING, PRIMARY KEY (name))")
 conn.execute("CREATE NODE TABLE ALBUM(name STRING, PRIMARY KEY (name))")
-conn.execute("CREATE NODE TABLE SONG(ID SERIAL, name STRING, lyrics STRING, PRIMARY KEY(ID))")
+conn.execute(
+"CREATE NODE TABLE SONG(ID SERIAL,name STRING,lyrics STRING,PRIMARY KEY(ID))"
+)
+# Create edges schema
 conn.execute("CREATE REL TABLE IN_ALBUM(FROM SONG TO ALBUM)")
 conn.execute("CREATE REL TABLE FROM_ARTIST(FROM ALBUM TO ARTIST)");
 ```
@@ -437,7 +442,7 @@ graph = KuzuGraph(db)
 print(graph.get_schema)
 ```
 
-## Graph-only retrieval
+### Graph-only retrieval
 
 ```{python}
 #| echo: true
@@ -464,7 +469,7 @@ Do not include any text except the generated Cypher statement.
 The question is:\n""" + user_query
 ```
 
-## Graph-only retrieval
+### Graph-only retrieval
 
 ```{python}
 #| echo: true
@@ -490,7 +495,7 @@ Helpful Answer:
 """
 ```
 
-## Graph-only retrieval
+### Graph-only retrieval
 
 ```{python}
 #| echo: true
@@ -519,7 +524,7 @@ def generate_kg_response(query):
     return final_response["choices"][0]["message"]["content"]
 ```
 
-## Graph-only retrieval
+### Graph-only retrieval
 
 ```{python}
 #| echo: true
@@ -527,7 +532,7 @@ query = "How many songs does the black album have?"
 print(generate_kg_response(query))
 ```
 
-## Graph-only retrieval
+### Graph-only retrieval
 
 ```{python}
 #| echo: true
@@ -535,7 +540,7 @@ query = "Which songs does the black album have?"
 print(generate_kg_response(query))
 ```
 
-## Graph-only retrieval
+### Graph-only retrieval
 
 [https://alonsosilva-song-finder-graph.hf.space](https://alonsosilva-song-finder-graph.hf.space)
 
@@ -545,7 +550,7 @@ IFrame("https://alonsosilva-song-finder-graph.hf.space", width=850, height=450)
 
 # Combining graph and vector retrieval
 
-## Classification
+### Classification
 
 ```{python}
 #| echo: true
@@ -561,7 +566,7 @@ def generate_hermes_prompt(user_prompt):
     )
 ```
 
-## Classification
+### Classification
 
 ```{python}
 #| echo: true
@@ -578,7 +583,7 @@ def get_classification(query):
     return response
 ```
 
-## Classification
+### Classification
 
 ```{python}
 #| echo: true
@@ -617,7 +622,7 @@ for query in queries:
 # print(get_classification("Which songs does the black album have?"))
 ```
 
-## Combining graph and vector retrieval
+### Combining graph and vector retrieval
 
 ```{python}
 #| echo: true
@@ -630,7 +635,7 @@ def get_final_response(query):
     return response
 ```
 
-## Combining graph and vector retrieval
+### Combining graph and vector retrieval
 
 ```{python}
 #| echo: true
@@ -646,7 +651,7 @@ for query in queries:
     print()
 ```
 
-## Combining graph and vectorial retrieval
+### Combining graph and vectorial retrieval
 
 [https://alonsosilva-song-finder-graphrag.hf.space](https://alonsosilva-song-finder-graphrag.hf.space)
 
