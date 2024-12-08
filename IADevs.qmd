@@ -199,6 +199,15 @@ reranker = LinearCombinationReranker(
 #| echo: true
 query = "Which song is about a boy who is having nightmares?"
 results = table.search(query).limit(10).to_polars()
+results.select(["Song","Album", "Lyrics", "_distance", "vector"])
+```
+
+### Vector-only retrieval
+
+```{python}
+#| echo: true
+query = "Which song is about a boy who is having nightmares?"
+results = table.search(query).limit(10).to_polars()
 results["Song"].to_list()
 ```
 
