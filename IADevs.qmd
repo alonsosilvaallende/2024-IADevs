@@ -38,8 +38,8 @@ jupyter:
 
 ###
 
-- Slides: [alonsosilvaallende.github.io/2024-PyData-Global/](https://alonsosilvaallende.github.io/2024-PyData-Global/)
-- This presentation: [https://github.com/alonsosilvaallende/2024-PyData-Global/blob/main/PyData-Global.ipynb](https://github.com/alonsosilvaallende/2024-PyData-Global/blob/main/PyData-Global.ipynb)
+- Slides: [https://alonsosilvaallende.github.io/2024-IADevs/](https://alonsosilvaallende.github.io/2024-IADevs/)
+- This presentation: [https://github.com/alonsosilvaallende/2024-IADevs/blob/main/IADevs.ipynb](https://github.com/alonsosilvaallende/2024-IADevs/blob/main/IADevs.ipynb)
 
 ```{python}
 from IPython.display import IFrame
