@@ -96,6 +96,12 @@ queries = [
 
 # Vector-only retrieval
 
+### {.nostretch}
+
+![](./assets/lancedb-logo.svg "LanceDB logo"){width="40%"}
+
+Vector database: [https://lancedb.com/](https://lancedb.com/)
+
 ### Vector-only retrieval
 
 ```{python}
@@ -229,7 +235,10 @@ results["Song"].to_list()
 IFrame("https://alonsosilva-song-finder.hf.space", width=850, height=450)
 ```
 
-### Retrieval Augmented Generation (RAG)
+###
+::: {style="margin-top: 200px; font-size: 2em; color: black;"}
+Retrieval Augmented Generation (RAG)
+:::
 
 ```{python}
 # #| echo: true
@@ -246,6 +255,31 @@ IFrame("https://alonsosilva-song-finder.hf.space", width=850, height=450)
 #     verbose=False,
 # )
 ```
+
+###
+
+::: {.column width="25%"}
+![](./assets/llama-cpp-logo.png "llama.cpp logo"){width="50%"}
+:::
+
+::: {.column width="25%"}
+![](./assets/llama-cpp-python-logo.svg "llama-cpp-python logo"){width="30%"}
+:::
+
+::: {.column width="25%"}
+![](./assets/NousResearch2.jpg "NousResearch logo"){width="50%"}
+:::
+
+::: {.column width="20%"}
+![](./assets/hf.png "HuggingFace logo"){width="100%"}
+:::
+
+- [https://github.com/ggerganov/llama.cpp](https://github.com/ggerganov/llama.cpp)
+- [https://llama-cpp-python.readthedocs.io/](https://llama-cpp-python.readthedocs.io/)
+- [https://nousresearch.com/](https://nousresearch.com/)
+- [https://huggingface.co/](https://huggingface.co/)
+
+### Retrieval Augmented Generation (RAG)
 
 ```{python}
 #| echo: true
@@ -304,6 +338,7 @@ print(build_prompt(query))
 
 ```{python}
 #| echo: true
+#| code-line-numbers: 1|2|3-7|8|1-8
 def generate_response(query):
     prompt = build_prompt(query)
     response = llm.create_chat_completion(
@@ -355,6 +390,12 @@ df.filter(pl.col("Album") == "The Black Album")["Song"].to_list()
 ```
 
 # Graph-only retrieval
+
+### {.nostretch}
+
+![](./assets/kuzu-logo.png "Kùzu logo"){width="40%"}
+
+Graph database: [https://kuzudb.com/](https://kuzudb.com/)
 
 ### Graph-only retrieval
 
@@ -697,21 +738,6 @@ What is NOT Structured Generation?
 - Instructor: [https://python.useinstructor.com/](https://python.useinstructor.com/)
 - Marvin: [https://www.askmarvin.ai/](https://www.askmarvin.ai/)
 
-:::: {.content-hidden}
-
-::: {.column width="30%"}
-![](./assets/llama-cpp-logo.png "llama.cpp logo"){width="50%"}
-:::
-
-::: {.column width="40%"}
-![](./assets/llama-cpp-python-logo.svg "llama-cpp-python logo"){width="30%"}
-:::
-
-::: {.column width="30%"}
-![](./assets/NousResearch.jpg "NousResearch logo"){width="30%"}
-:::
-
-::::
 
 ### Structured Outputs in Code
 
@@ -923,12 +949,6 @@ output["choices"][0]["message"]["tool_calls"][0]["function"]["arguments"]
 2. Structured Generation
 
 # Knowledge Graph Generation
-
-### {.nostretch}
-
-![](./assets/kuzu-logo.png "Kùzu logo"){width="40%"}
-
-Graph database: [https://kuzudb.com/](https://kuzudb.com/)
 
 ### Consider a text
 
@@ -1478,6 +1498,7 @@ def query_generator_tool(query):
     col_name = df.columns[0]
     _values = df[col_name].to_list()
     return f"[{col_name}: {_values}]"
+    
 query_generator_tool("What discovery is Marie Curie famous for?")
 ```
 
